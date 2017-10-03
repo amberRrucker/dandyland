@@ -1,0 +1,62 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+
+$brand-primary: #41b8b6;
+$brand-darker: 	#06897f;
+$brand-darkest: #0e6664;
+$linen: 		#f9f5ef;
+$taupe: 		#938b7a;
+$mustard: 		#b89132;
+$blue-dark: 	#134142;
+$black:			#000;
+
+$color__background-body: $linen;
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500);
+$open-sans: 'Open Sans', sans-serif;
+
+@mixin flex-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin justify-content {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+@mixin flex-direction-column {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+@mixin flex-direction-row {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+@mixin flex-center-align {
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;	
+}
+
+
+
+
