@@ -35,18 +35,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div>
 	</header>
 	
+	
 	<?php else : ?>
 	
 	<header class="heroInterior">
 		<div class="heroInterior-imgWrapper">
 			<div class="heroInterior-img">&nbsp;</div>
 		</div>
-		<div class="container">
-			<div class="navBack">
-				<a class="navBack-text" href="<?php echo esc_url( home_url( '/' ) ); ?>"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back to Homepage</a>
-			</div>
-		</div>
 	</header>
 	
 
 	<?php endif; ?>
+	
+	<div class="mainNav-wrapper">
+		<div class="mainNav-container">
+			<div class="mainNav-row">
+				<div class="mainNav">
+					<a class="mainNav-link" href="<?php echo esc_url( home_url( '/faqs' ) ); ?>">FAQs</a>
+					<a class="mainNav-link mainNav-linkHome" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
+					<a class="mainNav-link" href="#contact">Contact</a>
+				</div>
+			</div>
+		</div>
+	</div>

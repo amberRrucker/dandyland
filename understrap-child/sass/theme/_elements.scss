@@ -90,6 +90,47 @@
 	width: 200px;
 }
 
+//Navigation
+
+.mainNav-wrapper {
+	background-color: lighten($linen, 2%);
+	padding: 20px 15px 20px;
+}
+
+.mainNav-container {
+	@include make-container;
+}
+
+.mainNav-row {
+	@include make-row;
+}
+
+.mainNav {
+	@include make-col-ready();
+	@include make-col(8);
+	margin: 0 auto;
+	padding-left: 6%;
+	text-align: center;
+}
+
+.mainNav-link {
+	color: $blue-dark;
+	font-size: 1.25rem;
+	letter-spacing: 3px;
+	margin: 1rem 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	&:hover {
+		color: lighten($blue-dark, 20%);
+		text-decoration: none;
+	}
+}
+
+.mainNav-linkHome {
+	font-size: 1.5rem;
+}
+
 .navBack-text {
 	color: #fff;
 	font-size: .9rem;
@@ -410,12 +451,42 @@ a.afg-page:hover {
 	width: 100%;
 }
 
+.wpcf7 {
+	margin: 0 !important;
+}
+
+.wpcf7 .wpcf7-form label {
+	float: left;
+	margin: 1% 2% 1% 0;
+	width: 40%;
+	
+	&.contact-formMessage {
+		float: none;
+		width: 84%;
+	}
+}
+
+
+.btn-outline-primary, .wpcf7 input[type="submit"] {
+	background-color: $mustard;
+	border: 1px solid $blue-dark;
+	color: $blue-dark;	
+	width: 84%;
+	
+	&:hover {
+		background-color: $blue-dark;
+		border: 1px solid $mustard;
+	}
+}
+
+
 //Facebook
 
 .contact-formFacebook {
 	background-color: $brand-darkest;
 	padding: 3em 3em 2em;
 	text-align: left;
+	width: 100%;
 	
 	@media (max-width: 960px) {
 	    width: 100%;
@@ -430,6 +501,10 @@ a.afg-page:hover {
 .cff-item > p,
 p.cff-post-text {
 	margin: 0;
+}
+
+#cff.cff-default-styles a {
+	color: $taupe;
 }
 
 //internal page
