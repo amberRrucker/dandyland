@@ -7,6 +7,11 @@
 .split-container {
 	@include flex-box;
 	@include flex-direction-row;
+	
+	@media (max-width: 760px) {
+		display: block;
+		width: 100%;
+	}
 }
 
 .split-item {
@@ -16,6 +21,11 @@
 	@include flex-center-align;
 	width: 50%;
 	padding: 3em 5em 6em 5em;
+	
+	@media (max-width: 760px) {
+		display: block;
+	    width: 100%;
+	}
 }
 
 .button-container {
@@ -25,9 +35,17 @@
 
 .button {
 	display: inline-block;
-    padding: .5rem 1rem;
+	font-family: "Open Sans", sans-serif;
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: .5px;
     margin: .5rem 1rem;
+    padding: .5rem 1rem;
     width: auto;
+    
+    &:hover {
+	    text-decoration: none;
+    }
 }
 
 //Header Section
@@ -53,6 +71,78 @@
 	margin: 0 auto;
 	width: 200px;
 }
+
+.heroInterior {
+	background: url('../imgs/header.svg');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 250px;
+}
+
+.heroInterior-img {
+	background: url('../imgs/mandala.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 200px;
+	margin: 0 auto;
+	width: 200px;
+}
+
+//Navigation
+
+.mainNav-wrapper {
+	background-color: lighten($linen, 2%);
+	padding: 20px 15px 20px;
+}
+
+.mainNav-container {
+	@include make-container;
+}
+
+.mainNav-row {
+	@include make-row;
+}
+
+.mainNav {
+	@include make-col-ready();
+	@include make-col(8);
+	margin: 0 auto;
+	padding-left: 6%;
+	text-align: center;
+}
+
+.mainNav-link {
+	color: $blue-dark;
+	font-size: 1.25rem;
+	letter-spacing: 3px;
+	margin: 1rem 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	&:hover {
+		color: lighten($blue-dark, 20%);
+		text-decoration: none;
+	}
+}
+
+.mainNav-linkHome {
+	font-size: 1.5rem;
+}
+
+.navBack-text {
+	color: #fff;
+	font-size: .9rem;
+    letter-spacing: 1px;
+    margin: 20px 0 0;
+    
+    &:hover {
+	    color: darken(#fff, 20%);
+	    text-decoration: none;
+    }
+}
+
 
 
 //About Section
@@ -83,6 +173,7 @@
 	background-size: contain;
 	height: 100px;
 	margin: 0 auto;
+	max-width: 100%;
 	width: 300px;
 }
 
@@ -112,12 +203,21 @@
 
 .cat-tattooButtonContainer {
 	background-color: $mustard;
+	
+	&:hover {
+		background-color: darken($mustard, 10%);
+		
+		.cat-tattooButton {
+			color: $blue-dark;
+			background-color: darken($mustard, 10%);	
+		}
+	}
 }
 
 .cat-tattooButton {
 	background-color: $mustard;
 	border: 1px solid $blue-dark;
-	color: $blue-dark;
+	color: $blue-dark;	
 }
 
 .cat-piercingWrapper {
@@ -128,6 +228,15 @@
 
 .cat-piercingButtonContainer {
 	background-color: $blue-dark;
+	
+	&:hover {
+		background-color: darken($blue-dark, 10%);
+		
+		.cat-piercingButton {
+			color: $mustard;
+			background-color: darken($blue-dark, 10%);	
+		}
+	}
 }
 
 .cat-piercingButton {
@@ -154,13 +263,120 @@
 
 .artist-contentWrapper {
 	@include make-col-ready();
-	@include make-col(8);
+	@include make-col(10);
 	margin: 0 auto;
 }
 
 .artists-title {
 	text-align: center;
 }
+
+.artists-galleryWrapper {
+	margin: 0 auto;
+}
+
+.artists-galleryWrapper .staff-member {
+	@include make-col-ready();
+	@include make-col(2.25);
+	float: left;
+	
+	@media (max-width: 960px) {
+	    @include make-col(4);
+	    margin: 10px 0;
+	}
+	
+	@media (max-width: 720px) {
+		@include make-col(6);
+	}
+}
+
+.piercer-galleryWrapper .staff-member {
+	@include make-col-ready();
+	@include make-col(6);
+	float: left;
+	
+	@media (max-width: 960px) {
+	    margin: 10px 0;
+	}
+}
+
+.artist-buttonContainer {
+	background-color: $blue-dark;
+	width: 100%;
+	
+	&:hover {
+		background-color: darken($blue-dark, 10%);
+		
+		.artist-button {
+			background-color: darken($blue-dark, 10%);
+			color: $mustard;
+			text-decoration: none;	
+		}
+	}
+}
+
+.artist-button {
+	background-color: $blue-dark;
+	border: 1px solid $mustard;
+	color: $mustard;
+    text-align: center;
+    width: 75%;
+}
+
+.staff-interiorPhoto {
+	@include make-col-ready();
+	@include make-col(4);
+}
+
+.staff-infoWrap {
+	@include make-col-ready();
+	@include make-col(8);
+}
+
+.staff-galleryWrap {
+	@include make-col-ready();
+	@include make-col(12);
+}
+
+.piercer-galleryWrapper {
+	@include make-col-ready();
+	@include make-col(5);
+	
+	@media (max-width: 960px) {
+	    @include make-col(8);
+	    margin: 10px 0;
+	}
+	
+	@media (max-width: 720px) {
+		@include make-col(12);
+	}
+}
+
+.staff-name {
+	margin-top: 0;
+}
+
+.staff-title {
+	font-size: 1.25rem;
+    letter-spacing: 3px;
+    margin: 20px 0 0;
+}
+
+.afg-img {
+	margin: 5% 10px;
+}
+
+a.afg-page,
+.afg-page {
+	background-color: $blue-dark;
+	color: $white;
+	padding: 2px;
+}
+
+a.afg-page:hover {
+	background: darken($blue-dark, 10%);
+}
+
 
 //Gallery Section
 
@@ -179,7 +395,7 @@
 
 .gallery-contentWrapper {
 	@include make-col-ready();
-	@include make-col(8);
+	@include make-col(10);
 	margin: 0 auto;
 }
 
@@ -195,10 +411,15 @@
 }
 
 .contact-formWrapper {
-	background-color: $mustard;
-	color: $blue-dark;
+	background-color: $blue-dark;
+	color: $mustard;
+	padding: 0;
 	text-align: center;
 	width: 67%;
+	
+	@media (max-width: 960px) {
+	    width: 100%;
+	}
 }
 
 .contact-mapWrapper {
@@ -209,6 +430,220 @@
 	color: $mustard;
 	text-align: center;
 	width: 33%;
+	
+	@media (max-width: 960px) {
+	    display: none;
+	}
+}
+
+.contact-link {
+	color: $mustard;
+	
+	&:hover {
+		color: darken($mustard, 10%);
+		text-decoration: none;
+	}
+}
+
+.contact-formText {
+	padding: 3em 3em 2em;
+	text-align: left;
+	width: 100%;
+}
+
+.wpcf7 {
+	margin: 0 !important;
+}
+
+.wpcf7 .wpcf7-form label {
+	float: left;
+	margin: 1% 2% 1% 0;
+	width: 40%;
+	
+	&.contact-formMessage {
+		float: none;
+		width: 84%;
+	}
+}
+
+
+.btn-outline-primary, .wpcf7 input[type="submit"] {
+	background-color: $mustard;
+	border: 1px solid $blue-dark;
+	color: $blue-dark;	
+	width: 84%;
+	
+	&:hover {
+		background-color: $blue-dark;
+		border: 1px solid $mustard;
+	}
+}
+
+
+//Facebook
+
+.contact-formFacebook {
+	background-color: $brand-darkest;
+	padding: 3em 3em 2em;
+	text-align: left;
+	width: 100%;
+	
+	@media (max-width: 960px) {
+	    width: 100%;
+	}
+}
+
+.cff-date,
+.cff-author {
+	display: none;
+}
+
+.cff-item > p,
+p.cff-post-text {
+	margin: 0;
+}
+
+#cff.cff-default-styles a {
+	color: $taupe;
+}
+
+//internal page
+
+.internalPage-container {
+	@include make-container;
+	margin: 60px 0 40px;
+}
+
+.internalPage-columns {
+	@include make-col-ready();
+	@include make-col(10);
+	//@include make-md-column-push(1);
+}
+
+//Footer
+
+.footer-wrapper {
+	background: url('../imgs/footer-graphic.svg');
+	background-color: $brand-darker;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: initial;
+}
+
+.footer-copyright {
+	@include make-col-ready();
+	@include make-col(4);
+	color: $blue-dark;
+	
+	@media (max-width: 960px) {
+	    @include make-col(6);
+	    margin: 10px 0;
+	}
+	
+	@media (max-width: 720px) {
+		@include make-col(12);
+	}
+}
+
+.footer-logo {
+	background: url('../imgs/mandala.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	height: 50px;
+	margin: 5px;
+	width: 50px;
+}
+
+.footer-copyrightText {
+	float: left;
+	font-size: .7rem;
+	line-height: .9rem;
+	margin-top: 5%;
+}
+
+.footer-social {
+	@include make-col-ready();
+	@include make-col(8);
+	display: flex;
+	justify-content: flex-end;
+	
+	@media (max-width: 960px) {
+	    @include make-col(6);
+	}
+	
+	@media (max-width: 720px) {
+		@include make-col(12);
+	}
+}
+
+.footer-icon {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	height: 40px;
+	margin: 10px;
+	width: 40px;
+}
+
+.footer-facebook {
+	background: url('../imgs/facebook.svg');
+}
+
+.footer-instagram {
+	background: url('../imgs/instagram.svg');
+}
+
+.footer-google {
+	background: url('../imgs/google.svg');
+}
+
+.footer-yelp {
+	background: url('../imgs/yelp.svg');
+}
+
+// Blog Posts
+
+.single-artistContainer,
+.internal-artistContainer {
+	padding: 2em 0 3em;
+}
+
+.single-artistImageWrap,
+.internal-artistImageWrap {
+	@include make-col-ready();
+	@include make-col(3);
+}
+
+.single-artistInfoWrap,
+.internal-artistInfoWrap {
+	@include make-col-ready();
+	@include make-col(9);
+}
+
+.single-artistName,
+.internal-artistName {
+	margin: 0;
+}
+
+.single-artistNameLink {
+	color: $brand-darkest;
+	
+	&:hover {
+		color: darken($brand-darkest, 10%);
+		text-decoration: none;
+	}
+}
+
+.single-readMore {
+	color: $brand-primary;
+	
+	&:hover {
+		color: darken($brand-primary, 10%);
+		text-decoration: none;
+	}
 }
 
 

@@ -163,7 +163,8 @@ a {
 a:not([href]):not([tabindex]) {
   color: inherit;
   text-decoration: none; }
-  a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+  a:not([href]):not([tabindex]):focus,
+  a:not([href]):not([tabindex]):hover {
     color: inherit;
     text-decoration: none; }
   a:not([href]):not([tabindex]):focus {
@@ -242,8 +243,7 @@ select {
   text-transform: none; }
 
 button,
-html [type="button"],
-[type="reset"],
+html [type="button"], [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; }
 
@@ -1016,10 +1016,10 @@ pre {
   background-color: #fdfdfe; }
 
 .table-hover .table-light:hover {
-  background-color: #ececf6; }
+  background-color: #ececf5; }
   .table-hover .table-light:hover > td,
   .table-hover .table-light:hover > th {
-    background-color: #ececf6; }
+    background-color: #ececf5; }
 
 .table-dark,
 .table-dark > th,
@@ -1166,7 +1166,8 @@ pre {
   .wpcf7 textarea::placeholder, .wpcf7 .wpcf7-validation-errors::placeholder {
     color: #868e96;
     opacity: 1; }
-  .form-control:disabled, .wpcf7 input[type=text]:disabled,
+  .form-control:disabled,
+  .wpcf7 input[type=text]:disabled,
   .wpcf7 input[type=search]:disabled,
   .wpcf7 input[type=url]:disabled,
   .wpcf7 input[type=tel]:disabled,
@@ -1183,7 +1184,9 @@ pre {
   .wpcf7 input[type=file]:disabled,
   .wpcf7 input[type=submit]:disabled,
   .wpcf7 select:disabled,
-  .wpcf7 textarea:disabled, .wpcf7 .wpcf7-validation-errors:disabled, .form-control[readonly], .wpcf7 input[readonly][type=text],
+  .wpcf7 textarea:disabled,
+  .wpcf7 .wpcf7-validation-errors:disabled,
+  .form-control[readonly], .wpcf7 input[readonly][type=text],
   .wpcf7 input[readonly][type=search],
   .wpcf7 input[readonly][type=url],
   .wpcf7 input[readonly][type=tel],
@@ -1204,12 +1207,10 @@ pre {
     background-color: #e9ecef;
     opacity: 1; }
 
-select.form-control:not([size]):not([multiple]),
-.wpcf7 select:not([size]):not([multiple]) {
+select.form-control:not([size]):not([multiple]), .wpcf7 select:not([size]):not([multiple]) {
   height: calc(2.25rem + 2px); }
 
-select.form-control:focus::-ms-value,
-.wpcf7 select:focus::-ms-value {
+select.form-control:focus::-ms-value, .wpcf7 select:focus::-ms-value {
   color: #495057;
   background-color: #fff; }
 
@@ -1245,7 +1246,9 @@ select.form-control:focus::-ms-value,
   line-height: 1.25;
   border: solid transparent;
   border-width: 1px 0; }
-  .form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control, .wpcf7 .input-group-sm > input.form-control-plaintext[type=text],
+  .form-control-plaintext.form-control-sm,
+  .input-group-sm > .form-control-plaintext.form-control,
+  .wpcf7 .input-group-sm > input.form-control-plaintext[type=text],
   .wpcf7 .input-group-sm > input.form-control-plaintext[type=search],
   .wpcf7 .input-group-sm > input.form-control-plaintext[type=url],
   .wpcf7 .input-group-sm > input.form-control-plaintext[type=tel],
@@ -1262,10 +1265,10 @@ select.form-control:focus::-ms-value,
   .wpcf7 .input-group-sm > input.form-control-plaintext[type=file],
   .wpcf7 .input-group-sm > input.form-control-plaintext[type=submit],
   .wpcf7 .input-group-sm > select.form-control-plaintext,
-  .wpcf7 .input-group-sm > textarea.form-control-plaintext, .wpcf7 .input-group-sm > .form-control-plaintext.wpcf7-validation-errors,
-  .input-group-sm > .form-control-plaintext.input-group-addon,
-  .input-group-sm > .input-group-btn > .form-control-plaintext.btn, .wpcf7
-  .input-group-sm > .input-group-btn > input.form-control-plaintext[type=submit], .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, .wpcf7 .input-group-lg > input.form-control-plaintext[type=text],
+  .wpcf7 .input-group-sm > textarea.form-control-plaintext, .wpcf7 .input-group-sm > .form-control-plaintext.wpcf7-validation-errors, .input-group-sm > .form-control-plaintext.input-group-addon,
+  .input-group-sm > .input-group-btn > .form-control-plaintext.btn,
+  .wpcf7 .input-group-sm > .input-group-btn > input.form-control-plaintext[type=submit], .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control,
+  .wpcf7 .input-group-lg > input.form-control-plaintext[type=text],
   .wpcf7 .input-group-lg > input.form-control-plaintext[type=search],
   .wpcf7 .input-group-lg > input.form-control-plaintext[type=url],
   .wpcf7 .input-group-lg > input.form-control-plaintext[type=tel],
@@ -1282,14 +1285,13 @@ select.form-control:focus::-ms-value,
   .wpcf7 .input-group-lg > input.form-control-plaintext[type=file],
   .wpcf7 .input-group-lg > input.form-control-plaintext[type=submit],
   .wpcf7 .input-group-lg > select.form-control-plaintext,
-  .wpcf7 .input-group-lg > textarea.form-control-plaintext, .wpcf7 .input-group-lg > .form-control-plaintext.wpcf7-validation-errors,
-  .input-group-lg > .form-control-plaintext.input-group-addon,
-  .input-group-lg > .input-group-btn > .form-control-plaintext.btn, .wpcf7
-  .input-group-lg > .input-group-btn > input.form-control-plaintext[type=submit] {
+  .wpcf7 .input-group-lg > textarea.form-control-plaintext, .wpcf7 .input-group-lg > .form-control-plaintext.wpcf7-validation-errors, .input-group-lg > .form-control-plaintext.input-group-addon,
+  .input-group-lg > .input-group-btn > .form-control-plaintext.btn, .wpcf7 .input-group-lg > .input-group-btn > input.form-control-plaintext[type=submit] {
     padding-right: 0;
     padding-left: 0; }
 
-.form-control-sm, .input-group-sm > .form-control, .wpcf7 .input-group-sm > input[type=text],
+.form-control-sm, .input-group-sm > .form-control,
+.wpcf7 .input-group-sm > input[type=text],
 .wpcf7 .input-group-sm > input[type=search],
 .wpcf7 .input-group-sm > input[type=url],
 .wpcf7 .input-group-sm > input[type=tel],
@@ -1306,10 +1308,8 @@ select.form-control:focus::-ms-value,
 .wpcf7 .input-group-sm > input[type=file],
 .wpcf7 .input-group-sm > input[type=submit],
 .wpcf7 .input-group-sm > select,
-.wpcf7 .input-group-sm > textarea, .wpcf7 .input-group-sm > .wpcf7-validation-errors,
-.input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .btn, .wpcf7
-.input-group-sm > .input-group-btn > input[type=submit] {
+.wpcf7 .input-group-sm > textarea, .wpcf7 .input-group-sm > .wpcf7-validation-errors, .input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > .btn, .wpcf7 .input-group-sm > .input-group-btn > input[type=submit] {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -1321,7 +1321,8 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
   height: calc(1.8125rem + 2px); }
 
-.form-control-lg, .input-group-lg > .form-control, .wpcf7 .input-group-lg > input[type=text],
+.form-control-lg, .input-group-lg > .form-control,
+.wpcf7 .input-group-lg > input[type=text],
 .wpcf7 .input-group-lg > input[type=search],
 .wpcf7 .input-group-lg > input[type=url],
 .wpcf7 .input-group-lg > input[type=tel],
@@ -1338,10 +1339,8 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .wpcf7 .input-group-lg > input[type=file],
 .wpcf7 .input-group-lg > input[type=submit],
 .wpcf7 .input-group-lg > select,
-.wpcf7 .input-group-lg > textarea, .wpcf7 .input-group-lg > .wpcf7-validation-errors,
-.input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .btn, .wpcf7
-.input-group-lg > .input-group-btn > input[type=submit] {
+.wpcf7 .input-group-lg > textarea, .wpcf7 .input-group-lg > .wpcf7-validation-errors, .input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn, .wpcf7 .input-group-lg > .input-group-btn > input[type=submit] {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -1413,41 +1412,45 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-color: rgba(220, 53, 69, 0.8);
   border-radius: .2rem; }
 
-.was-validated .form-control:valid, .was-validated .wpcf7 input[type=text]:valid, .wpcf7 .was-validated input[type=text]:valid, .was-validated
-.wpcf7 input[type=search]:valid,
-.wpcf7 .was-validated input[type=search]:valid, .was-validated
-.wpcf7 input[type=url]:valid,
-.wpcf7 .was-validated input[type=url]:valid, .was-validated
-.wpcf7 input[type=tel]:valid,
-.wpcf7 .was-validated input[type=tel]:valid, .was-validated
-.wpcf7 input[type=number]:valid,
-.wpcf7 .was-validated input[type=number]:valid, .was-validated
-.wpcf7 input[type=range]:valid,
-.wpcf7 .was-validated input[type=range]:valid, .was-validated
-.wpcf7 input[type=date]:valid,
-.wpcf7 .was-validated input[type=date]:valid, .was-validated
-.wpcf7 input[type=month]:valid,
-.wpcf7 .was-validated input[type=month]:valid, .was-validated
-.wpcf7 input[type=week]:valid,
-.wpcf7 .was-validated input[type=week]:valid, .was-validated
-.wpcf7 input[type=time]:valid,
-.wpcf7 .was-validated input[type=time]:valid, .was-validated
-.wpcf7 input[type=datetime]:valid,
-.wpcf7 .was-validated input[type=datetime]:valid, .was-validated
-.wpcf7 input[type=datetime-local]:valid,
-.wpcf7 .was-validated input[type=datetime-local]:valid, .was-validated
-.wpcf7 input[type=color]:valid,
-.wpcf7 .was-validated input[type=color]:valid, .was-validated
-.wpcf7 input[type=email]:valid,
-.wpcf7 .was-validated input[type=email]:valid, .was-validated
-.wpcf7 input[type=file]:valid,
-.wpcf7 .was-validated input[type=file]:valid, .was-validated
-.wpcf7 input[type=submit]:valid,
-.wpcf7 .was-validated input[type=submit]:valid, .was-validated
-.wpcf7 select:valid,
-.wpcf7 .was-validated select:valid, .was-validated
-.wpcf7 textarea:valid,
-.wpcf7 .was-validated textarea:valid, .was-validated .wpcf7 .wpcf7-validation-errors:valid, .wpcf7 .was-validated .wpcf7-validation-errors:valid, .form-control.is-valid, .wpcf7 input.is-valid[type=text],
+.was-validated .form-control:valid,
+.was-validated .wpcf7 input[type=text]:valid,
+.wpcf7 .was-validated input[type=text]:valid,
+.was-validated .wpcf7 input[type=search]:valid,
+.wpcf7 .was-validated input[type=search]:valid,
+.was-validated .wpcf7 input[type=url]:valid,
+.wpcf7 .was-validated input[type=url]:valid,
+.was-validated .wpcf7 input[type=tel]:valid,
+.wpcf7 .was-validated input[type=tel]:valid,
+.was-validated .wpcf7 input[type=number]:valid,
+.wpcf7 .was-validated input[type=number]:valid,
+.was-validated .wpcf7 input[type=range]:valid,
+.wpcf7 .was-validated input[type=range]:valid,
+.was-validated .wpcf7 input[type=date]:valid,
+.wpcf7 .was-validated input[type=date]:valid,
+.was-validated .wpcf7 input[type=month]:valid,
+.wpcf7 .was-validated input[type=month]:valid,
+.was-validated .wpcf7 input[type=week]:valid,
+.wpcf7 .was-validated input[type=week]:valid,
+.was-validated .wpcf7 input[type=time]:valid,
+.wpcf7 .was-validated input[type=time]:valid,
+.was-validated .wpcf7 input[type=datetime]:valid,
+.wpcf7 .was-validated input[type=datetime]:valid,
+.was-validated .wpcf7 input[type=datetime-local]:valid,
+.wpcf7 .was-validated input[type=datetime-local]:valid,
+.was-validated .wpcf7 input[type=color]:valid,
+.wpcf7 .was-validated input[type=color]:valid,
+.was-validated .wpcf7 input[type=email]:valid,
+.wpcf7 .was-validated input[type=email]:valid,
+.was-validated .wpcf7 input[type=file]:valid,
+.wpcf7 .was-validated input[type=file]:valid,
+.was-validated .wpcf7 input[type=submit]:valid,
+.wpcf7 .was-validated input[type=submit]:valid,
+.was-validated .wpcf7 select:valid,
+.wpcf7 .was-validated select:valid,
+.was-validated .wpcf7 textarea:valid,
+.wpcf7 .was-validated textarea:valid, .was-validated .wpcf7 .wpcf7-validation-errors:valid,
+.wpcf7 .was-validated .wpcf7-validation-errors:valid, .form-control.is-valid,
+.wpcf7 input.is-valid[type=text],
 .wpcf7 input.is-valid[type=search],
 .wpcf7 input.is-valid[type=url],
 .wpcf7 input.is-valid[type=tel],
@@ -1464,45 +1467,50 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .wpcf7 input.is-valid[type=file],
 .wpcf7 input.is-valid[type=submit],
 .wpcf7 select.is-valid,
-.wpcf7 textarea.is-valid, .wpcf7 .is-valid.wpcf7-validation-errors, .was-validated
-.custom-select:valid,
+.wpcf7 textarea.is-valid,
+.wpcf7 .is-valid.wpcf7-validation-errors,
+.was-validated .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745; }
-  .was-validated .form-control:valid:focus, .was-validated .wpcf7 input[type=text]:valid:focus, .wpcf7 .was-validated input[type=text]:valid:focus, .was-validated
-  .wpcf7 input[type=search]:valid:focus,
-  .wpcf7 .was-validated input[type=search]:valid:focus, .was-validated
-  .wpcf7 input[type=url]:valid:focus,
-  .wpcf7 .was-validated input[type=url]:valid:focus, .was-validated
-  .wpcf7 input[type=tel]:valid:focus,
-  .wpcf7 .was-validated input[type=tel]:valid:focus, .was-validated
-  .wpcf7 input[type=number]:valid:focus,
-  .wpcf7 .was-validated input[type=number]:valid:focus, .was-validated
-  .wpcf7 input[type=range]:valid:focus,
-  .wpcf7 .was-validated input[type=range]:valid:focus, .was-validated
-  .wpcf7 input[type=date]:valid:focus,
-  .wpcf7 .was-validated input[type=date]:valid:focus, .was-validated
-  .wpcf7 input[type=month]:valid:focus,
-  .wpcf7 .was-validated input[type=month]:valid:focus, .was-validated
-  .wpcf7 input[type=week]:valid:focus,
-  .wpcf7 .was-validated input[type=week]:valid:focus, .was-validated
-  .wpcf7 input[type=time]:valid:focus,
-  .wpcf7 .was-validated input[type=time]:valid:focus, .was-validated
-  .wpcf7 input[type=datetime]:valid:focus,
-  .wpcf7 .was-validated input[type=datetime]:valid:focus, .was-validated
-  .wpcf7 input[type=datetime-local]:valid:focus,
-  .wpcf7 .was-validated input[type=datetime-local]:valid:focus, .was-validated
-  .wpcf7 input[type=color]:valid:focus,
-  .wpcf7 .was-validated input[type=color]:valid:focus, .was-validated
-  .wpcf7 input[type=email]:valid:focus,
-  .wpcf7 .was-validated input[type=email]:valid:focus, .was-validated
-  .wpcf7 input[type=file]:valid:focus,
-  .wpcf7 .was-validated input[type=file]:valid:focus, .was-validated
-  .wpcf7 input[type=submit]:valid:focus,
-  .wpcf7 .was-validated input[type=submit]:valid:focus, .was-validated
-  .wpcf7 select:valid:focus,
-  .wpcf7 .was-validated select:valid:focus, .was-validated
-  .wpcf7 textarea:valid:focus,
-  .wpcf7 .was-validated textarea:valid:focus, .was-validated .wpcf7 .wpcf7-validation-errors:valid:focus, .wpcf7 .was-validated .wpcf7-validation-errors:valid:focus, .form-control.is-valid:focus, .wpcf7 input.is-valid[type=text]:focus,
+  .was-validated .form-control:valid:focus,
+  .was-validated .wpcf7 input[type=text]:valid:focus,
+  .wpcf7 .was-validated input[type=text]:valid:focus,
+  .was-validated .wpcf7 input[type=search]:valid:focus,
+  .wpcf7 .was-validated input[type=search]:valid:focus,
+  .was-validated .wpcf7 input[type=url]:valid:focus,
+  .wpcf7 .was-validated input[type=url]:valid:focus,
+  .was-validated .wpcf7 input[type=tel]:valid:focus,
+  .wpcf7 .was-validated input[type=tel]:valid:focus,
+  .was-validated .wpcf7 input[type=number]:valid:focus,
+  .wpcf7 .was-validated input[type=number]:valid:focus,
+  .was-validated .wpcf7 input[type=range]:valid:focus,
+  .wpcf7 .was-validated input[type=range]:valid:focus,
+  .was-validated .wpcf7 input[type=date]:valid:focus,
+  .wpcf7 .was-validated input[type=date]:valid:focus,
+  .was-validated .wpcf7 input[type=month]:valid:focus,
+  .wpcf7 .was-validated input[type=month]:valid:focus,
+  .was-validated .wpcf7 input[type=week]:valid:focus,
+  .wpcf7 .was-validated input[type=week]:valid:focus,
+  .was-validated .wpcf7 input[type=time]:valid:focus,
+  .wpcf7 .was-validated input[type=time]:valid:focus,
+  .was-validated .wpcf7 input[type=datetime]:valid:focus,
+  .wpcf7 .was-validated input[type=datetime]:valid:focus,
+  .was-validated .wpcf7 input[type=datetime-local]:valid:focus,
+  .wpcf7 .was-validated input[type=datetime-local]:valid:focus,
+  .was-validated .wpcf7 input[type=color]:valid:focus,
+  .wpcf7 .was-validated input[type=color]:valid:focus,
+  .was-validated .wpcf7 input[type=email]:valid:focus,
+  .wpcf7 .was-validated input[type=email]:valid:focus,
+  .was-validated .wpcf7 input[type=file]:valid:focus,
+  .wpcf7 .was-validated input[type=file]:valid:focus,
+  .was-validated .wpcf7 input[type=submit]:valid:focus,
+  .wpcf7 .was-validated input[type=submit]:valid:focus,
+  .was-validated .wpcf7 select:valid:focus,
+  .wpcf7 .was-validated select:valid:focus,
+  .was-validated .wpcf7 textarea:valid:focus,
+  .wpcf7 .was-validated textarea:valid:focus, .was-validated .wpcf7 .wpcf7-validation-errors:valid:focus,
+  .wpcf7 .was-validated .wpcf7-validation-errors:valid:focus, .form-control.is-valid:focus,
+  .wpcf7 input.is-valid[type=text]:focus,
   .wpcf7 input.is-valid[type=search]:focus,
   .wpcf7 input.is-valid[type=url]:focus,
   .wpcf7 input.is-valid[type=tel]:focus,
@@ -1519,118 +1527,87 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .wpcf7 input.is-valid[type=file]:focus,
   .wpcf7 input.is-valid[type=submit]:focus,
   .wpcf7 select.is-valid:focus,
-  .wpcf7 textarea.is-valid:focus, .wpcf7 .is-valid.wpcf7-validation-errors:focus, .was-validated
-  .custom-select:valid:focus,
+  .wpcf7 textarea.is-valid:focus,
+  .wpcf7 .is-valid.wpcf7-validation-errors:focus,
+  .was-validated .custom-select:valid:focus,
   .custom-select.is-valid:focus {
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
-  .was-validated .form-control:valid ~ .invalid-feedback, .was-validated .wpcf7 input[type=text]:valid ~ .invalid-feedback, .wpcf7 .was-validated input[type=text]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=search]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=search]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=url]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=url]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=tel]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=tel]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=number]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=number]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=range]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=range]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=date]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=date]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=month]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=month]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=week]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=week]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=time]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=time]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=datetime]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=datetime]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=datetime-local]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=datetime-local]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=color]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=color]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=email]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=email]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=file]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=file]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=submit]:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=submit]:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 select:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated select:valid ~ .invalid-feedback, .was-validated
-  .wpcf7 textarea:valid ~ .invalid-feedback,
-  .wpcf7 .was-validated textarea:valid ~ .invalid-feedback, .was-validated .wpcf7 .wpcf7-validation-errors:valid ~ .invalid-feedback, .wpcf7 .was-validated .wpcf7-validation-errors:valid ~ .invalid-feedback,
-  .was-validated .form-control:valid ~ .invalid-tooltip,
-  .was-validated .wpcf7 input[type=text]:valid ~ .invalid-tooltip, .wpcf7
-  .was-validated input[type=text]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=search]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=search]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=url]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=url]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=tel]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=tel]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=number]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=number]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=range]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=range]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=date]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=date]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=month]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=month]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=week]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=week]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=time]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=time]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=datetime]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=datetime]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=datetime-local]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=datetime-local]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=color]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=color]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=email]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=email]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=file]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=file]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=submit]:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=submit]:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 select:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated select:valid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 textarea:valid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated textarea:valid ~ .invalid-tooltip,
-  .was-validated .wpcf7 .wpcf7-validation-errors:valid ~ .invalid-tooltip, .wpcf7
-  .was-validated .wpcf7-validation-errors:valid ~ .invalid-tooltip, .form-control.is-valid ~ .invalid-feedback, .wpcf7 input.is-valid[type=text] ~ .invalid-feedback,
+  .was-validated .form-control:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=text]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=text]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=search]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=search]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=url]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=url]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=tel]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=tel]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=number]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=number]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=range]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=range]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=date]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=date]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=month]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=month]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=week]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=week]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=time]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=time]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=datetime]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=datetime]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=datetime-local]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=datetime-local]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=color]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=color]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=email]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=email]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=file]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=file]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=submit]:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=submit]:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 select:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated select:valid ~ .invalid-feedback,
+  .was-validated .wpcf7 textarea:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated textarea:valid ~ .invalid-feedback, .was-validated .wpcf7 .wpcf7-validation-errors:valid ~ .invalid-feedback,
+  .wpcf7 .was-validated .wpcf7-validation-errors:valid ~ .invalid-feedback, .was-validated .form-control:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=text]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=text]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=search]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=search]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=url]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=url]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=tel]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=tel]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=number]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=number]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=range]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=range]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=date]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=date]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=month]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=month]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=week]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=week]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=time]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=time]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=datetime]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=datetime]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=datetime-local]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=datetime-local]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=color]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=color]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=email]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=email]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=file]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=file]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=submit]:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=submit]:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 select:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated select:valid ~ .invalid-tooltip,
+  .was-validated .wpcf7 textarea:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated textarea:valid ~ .invalid-tooltip, .was-validated .wpcf7 .wpcf7-validation-errors:valid ~ .invalid-tooltip,
+  .wpcf7 .was-validated .wpcf7-validation-errors:valid ~ .invalid-tooltip, .form-control.is-valid ~ .invalid-feedback,
+  .wpcf7 input.is-valid[type=text] ~ .invalid-feedback,
   .wpcf7 input.is-valid[type=search] ~ .invalid-feedback,
   .wpcf7 input.is-valid[type=url] ~ .invalid-feedback,
   .wpcf7 input.is-valid[type=tel] ~ .invalid-feedback,
@@ -1647,8 +1624,10 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .wpcf7 input.is-valid[type=file] ~ .invalid-feedback,
   .wpcf7 input.is-valid[type=submit] ~ .invalid-feedback,
   .wpcf7 select.is-valid ~ .invalid-feedback,
-  .wpcf7 textarea.is-valid ~ .invalid-feedback, .wpcf7 .is-valid.wpcf7-validation-errors ~ .invalid-feedback,
-  .form-control.is-valid ~ .invalid-tooltip, .wpcf7 input.is-valid[type=text] ~ .invalid-tooltip,
+  .wpcf7 textarea.is-valid ~ .invalid-feedback,
+  .wpcf7 .is-valid.wpcf7-validation-errors ~ .invalid-feedback,
+  .form-control.is-valid ~ .invalid-tooltip,
+  .wpcf7 input.is-valid[type=text] ~ .invalid-tooltip,
   .wpcf7 input.is-valid[type=search] ~ .invalid-tooltip,
   .wpcf7 input.is-valid[type=url] ~ .invalid-tooltip,
   .wpcf7 input.is-valid[type=tel] ~ .invalid-tooltip,
@@ -1665,66 +1644,76 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .wpcf7 input.is-valid[type=file] ~ .invalid-tooltip,
   .wpcf7 input.is-valid[type=submit] ~ .invalid-tooltip,
   .wpcf7 select.is-valid ~ .invalid-tooltip,
-  .wpcf7 textarea.is-valid ~ .invalid-tooltip, .wpcf7 .is-valid.wpcf7-validation-errors ~ .invalid-tooltip, .was-validated
-  .custom-select:valid ~ .invalid-feedback,
-  .was-validated
-  .custom-select:valid ~ .invalid-tooltip,
+  .wpcf7 textarea.is-valid ~ .invalid-tooltip,
+  .wpcf7 .is-valid.wpcf7-validation-errors ~ .invalid-tooltip,
+  .was-validated .custom-select:valid ~ .invalid-feedback,
+  .was-validated .custom-select:valid ~ .invalid-tooltip,
   .custom-select.is-valid ~ .invalid-feedback,
   .custom-select.is-valid ~ .invalid-tooltip {
     display: block; }
 
-.was-validated .form-check-input:valid + .form-check-label, .form-check-input.is-valid + .form-check-label {
+.was-validated .form-check-input:valid + .form-check-label,
+.form-check-input.is-valid + .form-check-label {
   color: #28a745; }
 
-.was-validated .custom-control-input:valid ~ .custom-control-indicator, .custom-control-input.is-valid ~ .custom-control-indicator {
+.was-validated .custom-control-input:valid ~ .custom-control-indicator,
+.custom-control-input.is-valid ~ .custom-control-indicator {
   background-color: rgba(40, 167, 69, 0.25); }
 
-.was-validated .custom-control-input:valid ~ .custom-control-description, .custom-control-input.is-valid ~ .custom-control-description {
+.was-validated .custom-control-input:valid ~ .custom-control-description,
+.custom-control-input.is-valid ~ .custom-control-description {
   color: #28a745; }
 
-.was-validated .custom-file-input:valid ~ .custom-file-control, .custom-file-input.is-valid ~ .custom-file-control {
+.was-validated .custom-file-input:valid ~ .custom-file-control,
+.custom-file-input.is-valid ~ .custom-file-control {
   border-color: #28a745; }
-  .was-validated .custom-file-input:valid ~ .custom-file-control::before, .custom-file-input.is-valid ~ .custom-file-control::before {
+  .was-validated .custom-file-input:valid ~ .custom-file-control::before,
+  .custom-file-input.is-valid ~ .custom-file-control::before {
     border-color: inherit; }
 
-.was-validated .custom-file-input:valid:focus, .custom-file-input.is-valid:focus {
+.was-validated .custom-file-input:valid:focus,
+.custom-file-input.is-valid:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
 
-.was-validated .form-control:invalid, .was-validated .wpcf7 input[type=text]:invalid, .wpcf7 .was-validated input[type=text]:invalid, .was-validated
-.wpcf7 input[type=search]:invalid,
-.wpcf7 .was-validated input[type=search]:invalid, .was-validated
-.wpcf7 input[type=url]:invalid,
-.wpcf7 .was-validated input[type=url]:invalid, .was-validated
-.wpcf7 input[type=tel]:invalid,
-.wpcf7 .was-validated input[type=tel]:invalid, .was-validated
-.wpcf7 input[type=number]:invalid,
-.wpcf7 .was-validated input[type=number]:invalid, .was-validated
-.wpcf7 input[type=range]:invalid,
-.wpcf7 .was-validated input[type=range]:invalid, .was-validated
-.wpcf7 input[type=date]:invalid,
-.wpcf7 .was-validated input[type=date]:invalid, .was-validated
-.wpcf7 input[type=month]:invalid,
-.wpcf7 .was-validated input[type=month]:invalid, .was-validated
-.wpcf7 input[type=week]:invalid,
-.wpcf7 .was-validated input[type=week]:invalid, .was-validated
-.wpcf7 input[type=time]:invalid,
-.wpcf7 .was-validated input[type=time]:invalid, .was-validated
-.wpcf7 input[type=datetime]:invalid,
-.wpcf7 .was-validated input[type=datetime]:invalid, .was-validated
-.wpcf7 input[type=datetime-local]:invalid,
-.wpcf7 .was-validated input[type=datetime-local]:invalid, .was-validated
-.wpcf7 input[type=color]:invalid,
-.wpcf7 .was-validated input[type=color]:invalid, .was-validated
-.wpcf7 input[type=email]:invalid,
-.wpcf7 .was-validated input[type=email]:invalid, .was-validated
-.wpcf7 input[type=file]:invalid,
-.wpcf7 .was-validated input[type=file]:invalid, .was-validated
-.wpcf7 input[type=submit]:invalid,
-.wpcf7 .was-validated input[type=submit]:invalid, .was-validated
-.wpcf7 select:invalid,
-.wpcf7 .was-validated select:invalid, .was-validated
-.wpcf7 textarea:invalid,
-.wpcf7 .was-validated textarea:invalid, .was-validated .wpcf7 .wpcf7-validation-errors:invalid, .wpcf7 .was-validated .wpcf7-validation-errors:invalid, .form-control.is-invalid, .wpcf7 input.is-invalid[type=text],
+.was-validated .form-control:invalid,
+.was-validated .wpcf7 input[type=text]:invalid,
+.wpcf7 .was-validated input[type=text]:invalid,
+.was-validated .wpcf7 input[type=search]:invalid,
+.wpcf7 .was-validated input[type=search]:invalid,
+.was-validated .wpcf7 input[type=url]:invalid,
+.wpcf7 .was-validated input[type=url]:invalid,
+.was-validated .wpcf7 input[type=tel]:invalid,
+.wpcf7 .was-validated input[type=tel]:invalid,
+.was-validated .wpcf7 input[type=number]:invalid,
+.wpcf7 .was-validated input[type=number]:invalid,
+.was-validated .wpcf7 input[type=range]:invalid,
+.wpcf7 .was-validated input[type=range]:invalid,
+.was-validated .wpcf7 input[type=date]:invalid,
+.wpcf7 .was-validated input[type=date]:invalid,
+.was-validated .wpcf7 input[type=month]:invalid,
+.wpcf7 .was-validated input[type=month]:invalid,
+.was-validated .wpcf7 input[type=week]:invalid,
+.wpcf7 .was-validated input[type=week]:invalid,
+.was-validated .wpcf7 input[type=time]:invalid,
+.wpcf7 .was-validated input[type=time]:invalid,
+.was-validated .wpcf7 input[type=datetime]:invalid,
+.wpcf7 .was-validated input[type=datetime]:invalid,
+.was-validated .wpcf7 input[type=datetime-local]:invalid,
+.wpcf7 .was-validated input[type=datetime-local]:invalid,
+.was-validated .wpcf7 input[type=color]:invalid,
+.wpcf7 .was-validated input[type=color]:invalid,
+.was-validated .wpcf7 input[type=email]:invalid,
+.wpcf7 .was-validated input[type=email]:invalid,
+.was-validated .wpcf7 input[type=file]:invalid,
+.wpcf7 .was-validated input[type=file]:invalid,
+.was-validated .wpcf7 input[type=submit]:invalid,
+.wpcf7 .was-validated input[type=submit]:invalid,
+.was-validated .wpcf7 select:invalid,
+.wpcf7 .was-validated select:invalid,
+.was-validated .wpcf7 textarea:invalid,
+.wpcf7 .was-validated textarea:invalid, .was-validated .wpcf7 .wpcf7-validation-errors:invalid,
+.wpcf7 .was-validated .wpcf7-validation-errors:invalid, .form-control.is-invalid,
+.wpcf7 input.is-invalid[type=text],
 .wpcf7 input.is-invalid[type=search],
 .wpcf7 input.is-invalid[type=url],
 .wpcf7 input.is-invalid[type=tel],
@@ -1741,45 +1730,50 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .wpcf7 input.is-invalid[type=file],
 .wpcf7 input.is-invalid[type=submit],
 .wpcf7 select.is-invalid,
-.wpcf7 textarea.is-invalid, .wpcf7 .is-invalid.wpcf7-validation-errors, .was-validated
-.custom-select:invalid,
+.wpcf7 textarea.is-invalid,
+.wpcf7 .is-invalid.wpcf7-validation-errors,
+.was-validated .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #dc3545; }
-  .was-validated .form-control:invalid:focus, .was-validated .wpcf7 input[type=text]:invalid:focus, .wpcf7 .was-validated input[type=text]:invalid:focus, .was-validated
-  .wpcf7 input[type=search]:invalid:focus,
-  .wpcf7 .was-validated input[type=search]:invalid:focus, .was-validated
-  .wpcf7 input[type=url]:invalid:focus,
-  .wpcf7 .was-validated input[type=url]:invalid:focus, .was-validated
-  .wpcf7 input[type=tel]:invalid:focus,
-  .wpcf7 .was-validated input[type=tel]:invalid:focus, .was-validated
-  .wpcf7 input[type=number]:invalid:focus,
-  .wpcf7 .was-validated input[type=number]:invalid:focus, .was-validated
-  .wpcf7 input[type=range]:invalid:focus,
-  .wpcf7 .was-validated input[type=range]:invalid:focus, .was-validated
-  .wpcf7 input[type=date]:invalid:focus,
-  .wpcf7 .was-validated input[type=date]:invalid:focus, .was-validated
-  .wpcf7 input[type=month]:invalid:focus,
-  .wpcf7 .was-validated input[type=month]:invalid:focus, .was-validated
-  .wpcf7 input[type=week]:invalid:focus,
-  .wpcf7 .was-validated input[type=week]:invalid:focus, .was-validated
-  .wpcf7 input[type=time]:invalid:focus,
-  .wpcf7 .was-validated input[type=time]:invalid:focus, .was-validated
-  .wpcf7 input[type=datetime]:invalid:focus,
-  .wpcf7 .was-validated input[type=datetime]:invalid:focus, .was-validated
-  .wpcf7 input[type=datetime-local]:invalid:focus,
-  .wpcf7 .was-validated input[type=datetime-local]:invalid:focus, .was-validated
-  .wpcf7 input[type=color]:invalid:focus,
-  .wpcf7 .was-validated input[type=color]:invalid:focus, .was-validated
-  .wpcf7 input[type=email]:invalid:focus,
-  .wpcf7 .was-validated input[type=email]:invalid:focus, .was-validated
-  .wpcf7 input[type=file]:invalid:focus,
-  .wpcf7 .was-validated input[type=file]:invalid:focus, .was-validated
-  .wpcf7 input[type=submit]:invalid:focus,
-  .wpcf7 .was-validated input[type=submit]:invalid:focus, .was-validated
-  .wpcf7 select:invalid:focus,
-  .wpcf7 .was-validated select:invalid:focus, .was-validated
-  .wpcf7 textarea:invalid:focus,
-  .wpcf7 .was-validated textarea:invalid:focus, .was-validated .wpcf7 .wpcf7-validation-errors:invalid:focus, .wpcf7 .was-validated .wpcf7-validation-errors:invalid:focus, .form-control.is-invalid:focus, .wpcf7 input.is-invalid[type=text]:focus,
+  .was-validated .form-control:invalid:focus,
+  .was-validated .wpcf7 input[type=text]:invalid:focus,
+  .wpcf7 .was-validated input[type=text]:invalid:focus,
+  .was-validated .wpcf7 input[type=search]:invalid:focus,
+  .wpcf7 .was-validated input[type=search]:invalid:focus,
+  .was-validated .wpcf7 input[type=url]:invalid:focus,
+  .wpcf7 .was-validated input[type=url]:invalid:focus,
+  .was-validated .wpcf7 input[type=tel]:invalid:focus,
+  .wpcf7 .was-validated input[type=tel]:invalid:focus,
+  .was-validated .wpcf7 input[type=number]:invalid:focus,
+  .wpcf7 .was-validated input[type=number]:invalid:focus,
+  .was-validated .wpcf7 input[type=range]:invalid:focus,
+  .wpcf7 .was-validated input[type=range]:invalid:focus,
+  .was-validated .wpcf7 input[type=date]:invalid:focus,
+  .wpcf7 .was-validated input[type=date]:invalid:focus,
+  .was-validated .wpcf7 input[type=month]:invalid:focus,
+  .wpcf7 .was-validated input[type=month]:invalid:focus,
+  .was-validated .wpcf7 input[type=week]:invalid:focus,
+  .wpcf7 .was-validated input[type=week]:invalid:focus,
+  .was-validated .wpcf7 input[type=time]:invalid:focus,
+  .wpcf7 .was-validated input[type=time]:invalid:focus,
+  .was-validated .wpcf7 input[type=datetime]:invalid:focus,
+  .wpcf7 .was-validated input[type=datetime]:invalid:focus,
+  .was-validated .wpcf7 input[type=datetime-local]:invalid:focus,
+  .wpcf7 .was-validated input[type=datetime-local]:invalid:focus,
+  .was-validated .wpcf7 input[type=color]:invalid:focus,
+  .wpcf7 .was-validated input[type=color]:invalid:focus,
+  .was-validated .wpcf7 input[type=email]:invalid:focus,
+  .wpcf7 .was-validated input[type=email]:invalid:focus,
+  .was-validated .wpcf7 input[type=file]:invalid:focus,
+  .wpcf7 .was-validated input[type=file]:invalid:focus,
+  .was-validated .wpcf7 input[type=submit]:invalid:focus,
+  .wpcf7 .was-validated input[type=submit]:invalid:focus,
+  .was-validated .wpcf7 select:invalid:focus,
+  .wpcf7 .was-validated select:invalid:focus,
+  .was-validated .wpcf7 textarea:invalid:focus,
+  .wpcf7 .was-validated textarea:invalid:focus, .was-validated .wpcf7 .wpcf7-validation-errors:invalid:focus,
+  .wpcf7 .was-validated .wpcf7-validation-errors:invalid:focus, .form-control.is-invalid:focus,
+  .wpcf7 input.is-invalid[type=text]:focus,
   .wpcf7 input.is-invalid[type=search]:focus,
   .wpcf7 input.is-invalid[type=url]:focus,
   .wpcf7 input.is-invalid[type=tel]:focus,
@@ -1796,118 +1790,87 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .wpcf7 input.is-invalid[type=file]:focus,
   .wpcf7 input.is-invalid[type=submit]:focus,
   .wpcf7 select.is-invalid:focus,
-  .wpcf7 textarea.is-invalid:focus, .wpcf7 .is-invalid.wpcf7-validation-errors:focus, .was-validated
-  .custom-select:invalid:focus,
+  .wpcf7 textarea.is-invalid:focus,
+  .wpcf7 .is-invalid.wpcf7-validation-errors:focus,
+  .was-validated .custom-select:invalid:focus,
   .custom-select.is-invalid:focus {
     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
-  .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .wpcf7 input[type=text]:invalid ~ .invalid-feedback, .wpcf7 .was-validated input[type=text]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=search]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=search]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=url]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=url]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=tel]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=tel]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=number]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=number]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=range]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=range]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=date]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=date]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=month]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=month]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=week]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=week]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=time]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=time]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=datetime]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=datetime]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=datetime-local]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=datetime-local]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=color]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=color]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=email]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=email]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=file]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=file]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 input[type=submit]:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated input[type=submit]:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 select:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated select:invalid ~ .invalid-feedback, .was-validated
-  .wpcf7 textarea:invalid ~ .invalid-feedback,
-  .wpcf7 .was-validated textarea:invalid ~ .invalid-feedback, .was-validated .wpcf7 .wpcf7-validation-errors:invalid ~ .invalid-feedback, .wpcf7 .was-validated .wpcf7-validation-errors:invalid ~ .invalid-feedback,
-  .was-validated .form-control:invalid ~ .invalid-tooltip,
-  .was-validated .wpcf7 input[type=text]:invalid ~ .invalid-tooltip, .wpcf7
-  .was-validated input[type=text]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=search]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=search]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=url]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=url]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=tel]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=tel]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=number]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=number]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=range]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=range]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=date]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=date]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=month]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=month]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=week]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=week]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=time]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=time]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=datetime]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=datetime]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=datetime-local]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=datetime-local]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=color]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=color]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=email]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=email]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=file]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=file]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 input[type=submit]:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated input[type=submit]:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 select:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated select:invalid ~ .invalid-tooltip,
-  .was-validated
-  .wpcf7 textarea:invalid ~ .invalid-tooltip,
-  .wpcf7
-  .was-validated textarea:invalid ~ .invalid-tooltip,
-  .was-validated .wpcf7 .wpcf7-validation-errors:invalid ~ .invalid-tooltip, .wpcf7
-  .was-validated .wpcf7-validation-errors:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, .wpcf7 input.is-invalid[type=text] ~ .invalid-feedback,
+  .was-validated .form-control:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=text]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=text]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=search]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=search]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=url]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=url]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=tel]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=tel]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=number]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=number]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=range]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=range]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=date]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=date]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=month]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=month]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=week]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=week]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=time]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=time]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=datetime]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=datetime]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=datetime-local]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=datetime-local]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=color]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=color]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=email]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=email]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=file]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=file]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 input[type=submit]:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated input[type=submit]:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 select:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated select:invalid ~ .invalid-feedback,
+  .was-validated .wpcf7 textarea:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated textarea:invalid ~ .invalid-feedback, .was-validated .wpcf7 .wpcf7-validation-errors:invalid ~ .invalid-feedback,
+  .wpcf7 .was-validated .wpcf7-validation-errors:invalid ~ .invalid-feedback, .was-validated .form-control:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=text]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=text]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=search]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=search]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=url]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=url]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=tel]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=tel]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=number]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=number]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=range]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=range]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=date]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=date]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=month]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=month]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=week]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=week]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=time]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=time]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=datetime]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=datetime]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=datetime-local]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=datetime-local]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=color]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=color]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=email]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=email]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=file]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=file]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 input[type=submit]:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated input[type=submit]:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 select:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated select:invalid ~ .invalid-tooltip,
+  .was-validated .wpcf7 textarea:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated textarea:invalid ~ .invalid-tooltip, .was-validated .wpcf7 .wpcf7-validation-errors:invalid ~ .invalid-tooltip,
+  .wpcf7 .was-validated .wpcf7-validation-errors:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback,
+  .wpcf7 input.is-invalid[type=text] ~ .invalid-feedback,
   .wpcf7 input.is-invalid[type=search] ~ .invalid-feedback,
   .wpcf7 input.is-invalid[type=url] ~ .invalid-feedback,
   .wpcf7 input.is-invalid[type=tel] ~ .invalid-feedback,
@@ -1924,8 +1887,10 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .wpcf7 input.is-invalid[type=file] ~ .invalid-feedback,
   .wpcf7 input.is-invalid[type=submit] ~ .invalid-feedback,
   .wpcf7 select.is-invalid ~ .invalid-feedback,
-  .wpcf7 textarea.is-invalid ~ .invalid-feedback, .wpcf7 .is-invalid.wpcf7-validation-errors ~ .invalid-feedback,
-  .form-control.is-invalid ~ .invalid-tooltip, .wpcf7 input.is-invalid[type=text] ~ .invalid-tooltip,
+  .wpcf7 textarea.is-invalid ~ .invalid-feedback,
+  .wpcf7 .is-invalid.wpcf7-validation-errors ~ .invalid-feedback,
+  .form-control.is-invalid ~ .invalid-tooltip,
+  .wpcf7 input.is-invalid[type=text] ~ .invalid-tooltip,
   .wpcf7 input.is-invalid[type=search] ~ .invalid-tooltip,
   .wpcf7 input.is-invalid[type=url] ~ .invalid-tooltip,
   .wpcf7 input.is-invalid[type=tel] ~ .invalid-tooltip,
@@ -1942,29 +1907,35 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .wpcf7 input.is-invalid[type=file] ~ .invalid-tooltip,
   .wpcf7 input.is-invalid[type=submit] ~ .invalid-tooltip,
   .wpcf7 select.is-invalid ~ .invalid-tooltip,
-  .wpcf7 textarea.is-invalid ~ .invalid-tooltip, .wpcf7 .is-invalid.wpcf7-validation-errors ~ .invalid-tooltip, .was-validated
-  .custom-select:invalid ~ .invalid-feedback,
-  .was-validated
-  .custom-select:invalid ~ .invalid-tooltip,
+  .wpcf7 textarea.is-invalid ~ .invalid-tooltip,
+  .wpcf7 .is-invalid.wpcf7-validation-errors ~ .invalid-tooltip,
+  .was-validated .custom-select:invalid ~ .invalid-feedback,
+  .was-validated .custom-select:invalid ~ .invalid-tooltip,
   .custom-select.is-invalid ~ .invalid-feedback,
   .custom-select.is-invalid ~ .invalid-tooltip {
     display: block; }
 
-.was-validated .form-check-input:invalid + .form-check-label, .form-check-input.is-invalid + .form-check-label {
+.was-validated .form-check-input:invalid + .form-check-label,
+.form-check-input.is-invalid + .form-check-label {
   color: #dc3545; }
 
-.was-validated .custom-control-input:invalid ~ .custom-control-indicator, .custom-control-input.is-invalid ~ .custom-control-indicator {
+.was-validated .custom-control-input:invalid ~ .custom-control-indicator,
+.custom-control-input.is-invalid ~ .custom-control-indicator {
   background-color: rgba(220, 53, 69, 0.25); }
 
-.was-validated .custom-control-input:invalid ~ .custom-control-description, .custom-control-input.is-invalid ~ .custom-control-description {
+.was-validated .custom-control-input:invalid ~ .custom-control-description,
+.custom-control-input.is-invalid ~ .custom-control-description {
   color: #dc3545; }
 
-.was-validated .custom-file-input:invalid ~ .custom-file-control, .custom-file-input.is-invalid ~ .custom-file-control {
+.was-validated .custom-file-input:invalid ~ .custom-file-control,
+.custom-file-input.is-invalid ~ .custom-file-control {
   border-color: #dc3545; }
-  .was-validated .custom-file-input:invalid ~ .custom-file-control::before, .custom-file-input.is-invalid ~ .custom-file-control::before {
+  .was-validated .custom-file-input:invalid ~ .custom-file-control::before,
+  .custom-file-input.is-invalid ~ .custom-file-control::before {
     border-color: inherit; }
 
-.was-validated .custom-file-input:invalid:focus, .custom-file-input.is-invalid:focus {
+.was-validated .custom-file-input:invalid:focus,
+.custom-file-input.is-invalid:focus {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
 
 .form-inline {
@@ -1985,41 +1956,24 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
       flex-flow: row wrap;
       align-items: center;
       margin-bottom: 0; }
-    .form-inline .form-control, .form-inline .wpcf7 input[type=text], .wpcf7 .form-inline input[type=text], .form-inline
-    .wpcf7 input[type=search],
-    .wpcf7 .form-inline input[type=search], .form-inline
-    .wpcf7 input[type=url],
-    .wpcf7 .form-inline input[type=url], .form-inline
-    .wpcf7 input[type=tel],
-    .wpcf7 .form-inline input[type=tel], .form-inline
-    .wpcf7 input[type=number],
-    .wpcf7 .form-inline input[type=number], .form-inline
-    .wpcf7 input[type=range],
-    .wpcf7 .form-inline input[type=range], .form-inline
-    .wpcf7 input[type=date],
-    .wpcf7 .form-inline input[type=date], .form-inline
-    .wpcf7 input[type=month],
-    .wpcf7 .form-inline input[type=month], .form-inline
-    .wpcf7 input[type=week],
-    .wpcf7 .form-inline input[type=week], .form-inline
-    .wpcf7 input[type=time],
-    .wpcf7 .form-inline input[type=time], .form-inline
-    .wpcf7 input[type=datetime],
-    .wpcf7 .form-inline input[type=datetime], .form-inline
-    .wpcf7 input[type=datetime-local],
-    .wpcf7 .form-inline input[type=datetime-local], .form-inline
-    .wpcf7 input[type=color],
-    .wpcf7 .form-inline input[type=color], .form-inline
-    .wpcf7 input[type=email],
-    .wpcf7 .form-inline input[type=email], .form-inline
-    .wpcf7 input[type=file],
-    .wpcf7 .form-inline input[type=file], .form-inline
-    .wpcf7 input[type=submit],
-    .wpcf7 .form-inline input[type=submit], .form-inline
-    .wpcf7 select,
-    .wpcf7 .form-inline select, .form-inline
-    .wpcf7 textarea,
-    .wpcf7 .form-inline textarea, .form-inline .wpcf7 .wpcf7-validation-errors, .wpcf7 .form-inline .wpcf7-validation-errors {
+    .form-inline .form-control, .form-inline .wpcf7 input[type=text], .wpcf7 .form-inline input[type=text],
+    .form-inline .wpcf7 input[type=search], .wpcf7 .form-inline input[type=search],
+    .form-inline .wpcf7 input[type=url], .wpcf7 .form-inline input[type=url],
+    .form-inline .wpcf7 input[type=tel], .wpcf7 .form-inline input[type=tel],
+    .form-inline .wpcf7 input[type=number], .wpcf7 .form-inline input[type=number],
+    .form-inline .wpcf7 input[type=range], .wpcf7 .form-inline input[type=range],
+    .form-inline .wpcf7 input[type=date], .wpcf7 .form-inline input[type=date],
+    .form-inline .wpcf7 input[type=month], .wpcf7 .form-inline input[type=month],
+    .form-inline .wpcf7 input[type=week], .wpcf7 .form-inline input[type=week],
+    .form-inline .wpcf7 input[type=time], .wpcf7 .form-inline input[type=time],
+    .form-inline .wpcf7 input[type=datetime], .wpcf7 .form-inline input[type=datetime],
+    .form-inline .wpcf7 input[type=datetime-local], .wpcf7 .form-inline input[type=datetime-local],
+    .form-inline .wpcf7 input[type=color], .wpcf7 .form-inline input[type=color],
+    .form-inline .wpcf7 input[type=email], .wpcf7 .form-inline input[type=email],
+    .form-inline .wpcf7 input[type=file], .wpcf7 .form-inline input[type=file],
+    .form-inline .wpcf7 input[type=submit], .wpcf7 .form-inline input[type=submit],
+    .form-inline .wpcf7 select, .wpcf7 .form-inline select,
+    .form-inline .wpcf7 textarea, .wpcf7 .form-inline textarea, .form-inline .wpcf7 .wpcf7-validation-errors, .wpcf7 .form-inline .wpcf7-validation-errors {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
@@ -2070,14 +2024,22 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   line-height: 1.25;
   border-radius: 0.25rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-  .btn:focus, .wpcf7 input[type=submit]:focus, .btn:hover, .wpcf7 input[type=submit]:hover {
+  .btn:focus,
+  .wpcf7 input[type=submit]:focus,
+  .btn:hover, .wpcf7 input[type=submit]:hover {
     text-decoration: none; }
-  .btn:focus, .wpcf7 input[type=submit]:focus, .btn.focus, .wpcf7 input.focus[type=submit] {
+  .btn:focus,
+  .wpcf7 input[type=submit]:focus,
+  .btn.focus, .wpcf7 input.focus[type=submit] {
     outline: 0;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); }
-  .btn.disabled, .wpcf7 input.disabled[type=submit], .btn:disabled, .wpcf7 input[type=submit]:disabled {
+  .btn.disabled,
+  .wpcf7 input.disabled[type=submit],
+  .btn:disabled, .wpcf7 input[type=submit]:disabled {
     opacity: .65; }
-  .btn:active, .wpcf7 input[type=submit]:active, .btn.active, .wpcf7 input.active[type=submit] {
+  .btn:active,
+  .wpcf7 input[type=submit]:active,
+  .btn.active, .wpcf7 input.active[type=submit] {
     background-image: none; }
 
 a.btn.disabled,
@@ -2092,12 +2054,15 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #0069d9;
     border-color: #0062cc; }
-  .btn-primary:focus, .btn-primary.focus {
+  .btn-primary:focus,
+  .btn-primary.focus {
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); }
-  .btn-primary.disabled, .btn-primary:disabled {
+  .btn-primary.disabled,
+  .btn-primary:disabled {
     background-color: #007bff;
     border-color: #007bff; }
-  .btn-primary:active, .btn-primary.active,
+  .btn-primary:active,
+  .btn-primary.active,
   .show > .btn-primary.dropdown-toggle {
     background-color: #0069d9;
     background-image: none;
@@ -2110,17 +2075,20 @@ fieldset[disabled] a.btn {
   .btn-secondary:hover {
     color: #fff;
     background-color: #727b84;
-    border-color: #6c757d; }
-  .btn-secondary:focus, .btn-secondary.focus {
+    border-color: #6c747d; }
+  .btn-secondary:focus,
+  .btn-secondary.focus {
     box-shadow: 0 0 0 3px rgba(134, 142, 150, 0.5); }
-  .btn-secondary.disabled, .btn-secondary:disabled {
+  .btn-secondary.disabled,
+  .btn-secondary:disabled {
     background-color: #868e96;
     border-color: #868e96; }
-  .btn-secondary:active, .btn-secondary.active,
+  .btn-secondary:active,
+  .btn-secondary.active,
   .show > .btn-secondary.dropdown-toggle {
     background-color: #727b84;
     background-image: none;
-    border-color: #6c757d; }
+    border-color: #6c747d; }
 
 .btn-success {
   color: #fff;
@@ -2130,12 +2098,15 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #218838;
     border-color: #1e7e34; }
-  .btn-success:focus, .btn-success.focus {
+  .btn-success:focus,
+  .btn-success.focus {
     box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5); }
-  .btn-success.disabled, .btn-success:disabled {
+  .btn-success.disabled,
+  .btn-success:disabled {
     background-color: #28a745;
     border-color: #28a745; }
-  .btn-success:active, .btn-success.active,
+  .btn-success:active,
+  .btn-success.active,
   .show > .btn-success.dropdown-toggle {
     background-color: #218838;
     background-image: none;
@@ -2149,12 +2120,15 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #138496;
     border-color: #117a8b; }
-  .btn-info:focus, .btn-info.focus {
+  .btn-info:focus,
+  .btn-info.focus {
     box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.5); }
-  .btn-info.disabled, .btn-info:disabled {
+  .btn-info.disabled,
+  .btn-info:disabled {
     background-color: #17a2b8;
     border-color: #17a2b8; }
-  .btn-info:active, .btn-info.active,
+  .btn-info:active,
+  .btn-info.active,
   .show > .btn-info.dropdown-toggle {
     background-color: #138496;
     background-image: none;
@@ -2168,12 +2142,15 @@ fieldset[disabled] a.btn {
     color: #111;
     background-color: #e0a800;
     border-color: #d39e00; }
-  .btn-warning:focus, .btn-warning.focus {
+  .btn-warning:focus,
+  .btn-warning.focus {
     box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5); }
-  .btn-warning.disabled, .btn-warning:disabled {
+  .btn-warning.disabled,
+  .btn-warning:disabled {
     background-color: #ffc107;
     border-color: #ffc107; }
-  .btn-warning:active, .btn-warning.active,
+  .btn-warning:active,
+  .btn-warning.active,
   .show > .btn-warning.dropdown-toggle {
     background-color: #e0a800;
     background-image: none;
@@ -2187,12 +2164,15 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #c82333;
     border-color: #bd2130; }
-  .btn-danger:focus, .btn-danger.focus {
+  .btn-danger:focus,
+  .btn-danger.focus {
     box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5); }
-  .btn-danger.disabled, .btn-danger:disabled {
+  .btn-danger.disabled,
+  .btn-danger:disabled {
     background-color: #dc3545;
     border-color: #dc3545; }
-  .btn-danger:active, .btn-danger.active,
+  .btn-danger:active,
+  .btn-danger.active,
   .show > .btn-danger.dropdown-toggle {
     background-color: #c82333;
     background-image: none;
@@ -2206,12 +2186,15 @@ fieldset[disabled] a.btn {
     color: #111;
     background-color: #e2e6ea;
     border-color: #dae0e5; }
-  .btn-light:focus, .btn-light.focus {
+  .btn-light:focus,
+  .btn-light.focus {
     box-shadow: 0 0 0 3px rgba(248, 249, 250, 0.5); }
-  .btn-light.disabled, .btn-light:disabled {
+  .btn-light.disabled,
+  .btn-light:disabled {
     background-color: #f8f9fa;
     border-color: #f8f9fa; }
-  .btn-light:active, .btn-light.active,
+  .btn-light:active,
+  .btn-light.active,
   .show > .btn-light.dropdown-toggle {
     background-color: #e2e6ea;
     background-image: none;
@@ -2225,12 +2208,15 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #23272b;
     border-color: #1d2124; }
-  .btn-dark:focus, .btn-dark.focus {
+  .btn-dark:focus,
+  .btn-dark.focus {
     box-shadow: 0 0 0 3px rgba(52, 58, 64, 0.5); }
-  .btn-dark.disabled, .btn-dark:disabled {
+  .btn-dark.disabled,
+  .btn-dark:disabled {
     background-color: #343a40;
     border-color: #343a40; }
-  .btn-dark:active, .btn-dark.active,
+  .btn-dark:active,
+  .btn-dark.active,
   .show > .btn-dark.dropdown-toggle {
     background-color: #23272b;
     background-image: none;
@@ -2245,14 +2231,20 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff; }
-  .btn-outline-primary:focus, .wpcf7 input[type=submit]:focus, .btn-outline-primary.focus, .wpcf7 input.focus[type=submit] {
+  .btn-outline-primary:focus,
+  .wpcf7 input[type=submit]:focus,
+  .btn-outline-primary.focus, .wpcf7 input.focus[type=submit] {
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); }
-  .btn-outline-primary.disabled, .wpcf7 input.disabled[type=submit], .btn-outline-primary:disabled, .wpcf7 input[type=submit]:disabled {
+  .btn-outline-primary.disabled,
+  .wpcf7 input.disabled[type=submit],
+  .btn-outline-primary:disabled, .wpcf7 input[type=submit]:disabled {
     color: #007bff;
     background-color: transparent; }
-  .btn-outline-primary:active, .wpcf7 input[type=submit]:active, .btn-outline-primary.active, .wpcf7 input.active[type=submit],
-  .show > .btn-outline-primary.dropdown-toggle, .wpcf7
-  .show > input.dropdown-toggle[type=submit] {
+  .btn-outline-primary:active,
+  .wpcf7 input[type=submit]:active,
+  .btn-outline-primary.active,
+  .wpcf7 input.active[type=submit],
+  .show > .btn-outline-primary.dropdown-toggle, .wpcf7 .show > input.dropdown-toggle[type=submit] {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff; }
@@ -2266,12 +2258,15 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #868e96;
     border-color: #868e96; }
-  .btn-outline-secondary:focus, .btn-outline-secondary.focus {
+  .btn-outline-secondary:focus,
+  .btn-outline-secondary.focus {
     box-shadow: 0 0 0 3px rgba(134, 142, 150, 0.5); }
-  .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
+  .btn-outline-secondary.disabled,
+  .btn-outline-secondary:disabled {
     color: #868e96;
     background-color: transparent; }
-  .btn-outline-secondary:active, .btn-outline-secondary.active,
+  .btn-outline-secondary:active,
+  .btn-outline-secondary.active,
   .show > .btn-outline-secondary.dropdown-toggle {
     color: #fff;
     background-color: #868e96;
@@ -2286,12 +2281,15 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #28a745;
     border-color: #28a745; }
-  .btn-outline-success:focus, .btn-outline-success.focus {
+  .btn-outline-success:focus,
+  .btn-outline-success.focus {
     box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5); }
-  .btn-outline-success.disabled, .btn-outline-success:disabled {
+  .btn-outline-success.disabled,
+  .btn-outline-success:disabled {
     color: #28a745;
     background-color: transparent; }
-  .btn-outline-success:active, .btn-outline-success.active,
+  .btn-outline-success:active,
+  .btn-outline-success.active,
   .show > .btn-outline-success.dropdown-toggle {
     color: #fff;
     background-color: #28a745;
@@ -2306,12 +2304,15 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #17a2b8;
     border-color: #17a2b8; }
-  .btn-outline-info:focus, .btn-outline-info.focus {
+  .btn-outline-info:focus,
+  .btn-outline-info.focus {
     box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.5); }
-  .btn-outline-info.disabled, .btn-outline-info:disabled {
+  .btn-outline-info.disabled,
+  .btn-outline-info:disabled {
     color: #17a2b8;
     background-color: transparent; }
-  .btn-outline-info:active, .btn-outline-info.active,
+  .btn-outline-info:active,
+  .btn-outline-info.active,
   .show > .btn-outline-info.dropdown-toggle {
     color: #fff;
     background-color: #17a2b8;
@@ -2326,12 +2327,15 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #ffc107;
     border-color: #ffc107; }
-  .btn-outline-warning:focus, .btn-outline-warning.focus {
+  .btn-outline-warning:focus,
+  .btn-outline-warning.focus {
     box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5); }
-  .btn-outline-warning.disabled, .btn-outline-warning:disabled {
+  .btn-outline-warning.disabled,
+  .btn-outline-warning:disabled {
     color: #ffc107;
     background-color: transparent; }
-  .btn-outline-warning:active, .btn-outline-warning.active,
+  .btn-outline-warning:active,
+  .btn-outline-warning.active,
   .show > .btn-outline-warning.dropdown-toggle {
     color: #fff;
     background-color: #ffc107;
@@ -2346,12 +2350,15 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #dc3545;
     border-color: #dc3545; }
-  .btn-outline-danger:focus, .btn-outline-danger.focus {
+  .btn-outline-danger:focus,
+  .btn-outline-danger.focus {
     box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.5); }
-  .btn-outline-danger.disabled, .btn-outline-danger:disabled {
+  .btn-outline-danger.disabled,
+  .btn-outline-danger:disabled {
     color: #dc3545;
     background-color: transparent; }
-  .btn-outline-danger:active, .btn-outline-danger.active,
+  .btn-outline-danger:active,
+  .btn-outline-danger.active,
   .show > .btn-outline-danger.dropdown-toggle {
     color: #fff;
     background-color: #dc3545;
@@ -2366,12 +2373,15 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #f8f9fa;
     border-color: #f8f9fa; }
-  .btn-outline-light:focus, .btn-outline-light.focus {
+  .btn-outline-light:focus,
+  .btn-outline-light.focus {
     box-shadow: 0 0 0 3px rgba(248, 249, 250, 0.5); }
-  .btn-outline-light.disabled, .btn-outline-light:disabled {
+  .btn-outline-light.disabled,
+  .btn-outline-light:disabled {
     color: #f8f9fa;
     background-color: transparent; }
-  .btn-outline-light:active, .btn-outline-light.active,
+  .btn-outline-light:active,
+  .btn-outline-light.active,
   .show > .btn-outline-light.dropdown-toggle {
     color: #fff;
     background-color: #f8f9fa;
@@ -2386,12 +2396,15 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #343a40;
     border-color: #343a40; }
-  .btn-outline-dark:focus, .btn-outline-dark.focus {
+  .btn-outline-dark:focus,
+  .btn-outline-dark.focus {
     box-shadow: 0 0 0 3px rgba(52, 58, 64, 0.5); }
-  .btn-outline-dark.disabled, .btn-outline-dark:disabled {
+  .btn-outline-dark.disabled,
+  .btn-outline-dark:disabled {
     color: #343a40;
     background-color: transparent; }
-  .btn-outline-dark:active, .btn-outline-dark.active,
+  .btn-outline-dark:active,
+  .btn-outline-dark.active,
   .show > .btn-outline-dark.dropdown-toggle {
     color: #fff;
     background-color: #343a40;
@@ -2401,20 +2414,27 @@ fieldset[disabled] a.btn {
   font-weight: normal;
   color: #007bff;
   border-radius: 0; }
-  .btn-link, .btn-link:active, .btn-link.active, .btn-link:disabled {
+  .btn-link,
+  .btn-link:active,
+  .btn-link.active,
+  .btn-link:disabled {
     background-color: transparent; }
-  .btn-link, .btn-link:focus, .btn-link:active {
+  .btn-link,
+  .btn-link:focus,
+  .btn-link:active {
     border-color: transparent;
     box-shadow: none; }
   .btn-link:hover {
     border-color: transparent; }
-  .btn-link:focus, .btn-link:hover {
+  .btn-link:focus,
+  .btn-link:hover {
     color: #0056b3;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link:disabled {
     color: #868e96; }
-    .btn-link:disabled:focus, .btn-link:disabled:hover {
+    .btn-link:disabled:focus,
+    .btn-link:disabled:hover {
       text-decoration: none; }
 
 .btn-lg, .btn-group-lg > .btn, .wpcf7 .btn-group-lg > input[type=submit] {
@@ -2526,15 +2546,18 @@ tbody.collapse.show {
   white-space: nowrap;
   background: none;
   border: 0; }
-  .dropdown-item:focus, .dropdown-item:hover {
+  .dropdown-item:focus,
+  .dropdown-item:hover {
     color: #16181b;
     text-decoration: none;
     background-color: #f8f9fa; }
-  .dropdown-item.active, .dropdown-item:active {
+  .dropdown-item.active,
+  .dropdown-item:active {
     color: #fff;
     text-decoration: none;
     background-color: #007bff; }
-  .dropdown-item.disabled, .dropdown-item:disabled {
+  .dropdown-item.disabled,
+  .dropdown-item:disabled {
     color: #868e96;
     background-color: transparent; }
 
@@ -2557,46 +2580,39 @@ tbody.collapse.show {
   position: relative;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn, .wpcf7 .btn-group > input[type=submit],
-  .btn-group-vertical > .btn, .wpcf7
-  .btn-group-vertical > input[type=submit] {
+  .btn-group > .btn,
+  .wpcf7 .btn-group > input[type=submit], .btn-group-vertical > .btn, .wpcf7 .btn-group-vertical > input[type=submit] {
     position: relative;
     flex: 0 1 auto;
     margin-bottom: 0; }
-    .btn-group > .btn:hover, .wpcf7 .btn-group > input[type=submit]:hover,
-    .btn-group-vertical > .btn:hover, .wpcf7
-    .btn-group-vertical > input[type=submit]:hover {
+    .btn-group > .btn:hover,
+    .wpcf7 .btn-group > input[type=submit]:hover, .btn-group-vertical > .btn:hover, .wpcf7 .btn-group-vertical > input[type=submit]:hover {
       z-index: 2; }
-    .btn-group > .btn:focus, .wpcf7 .btn-group > input[type=submit]:focus, .btn-group > .btn:active, .wpcf7 .btn-group > input[type=submit]:active, .btn-group > .btn.active, .wpcf7 .btn-group > input.active[type=submit],
-    .btn-group-vertical > .btn:focus, .wpcf7
-    .btn-group-vertical > input[type=submit]:focus,
-    .btn-group-vertical > .btn:active, .wpcf7
-    .btn-group-vertical > input[type=submit]:active,
-    .btn-group-vertical > .btn.active, .wpcf7
-    .btn-group-vertical > input.active[type=submit] {
+    .btn-group > .btn:focus,
+    .wpcf7 .btn-group > input[type=submit]:focus, .btn-group > .btn:active,
+    .wpcf7 .btn-group > input[type=submit]:active, .btn-group > .btn.active,
+    .wpcf7 .btn-group > input.active[type=submit], .btn-group-vertical > .btn:focus,
+    .wpcf7 .btn-group-vertical > input[type=submit]:focus, .btn-group-vertical > .btn:active,
+    .wpcf7 .btn-group-vertical > input[type=submit]:active, .btn-group-vertical > .btn.active, .wpcf7 .btn-group-vertical > input.active[type=submit] {
       z-index: 2; }
-  .btn-group .btn + .btn, .btn-group .wpcf7 input[type=submit] + .btn, .wpcf7 .btn-group input[type=submit] + .btn, .btn-group .wpcf7 .btn + input[type=submit], .wpcf7 .btn-group .btn + input[type=submit], .btn-group .wpcf7 input[type=submit] + input[type=submit], .wpcf7 .btn-group input[type=submit] + input[type=submit],
-  .btn-group .btn + .btn-group,
-  .btn-group .wpcf7 input[type=submit] + .btn-group, .wpcf7
-  .btn-group input[type=submit] + .btn-group,
-  .btn-group .btn-group + .btn,
-  .btn-group .wpcf7 .btn-group + input[type=submit], .wpcf7
-  .btn-group .btn-group + input[type=submit],
-  .btn-group .btn-group + .btn-group,
+  .btn-group .btn + .btn,
+  .btn-group .wpcf7 input[type=submit] + .btn,
+  .wpcf7 .btn-group input[type=submit] + .btn, .btn-group .wpcf7 .btn + input[type=submit],
+  .wpcf7 .btn-group .btn + input[type=submit], .btn-group .wpcf7 input[type=submit] + input[type=submit],
+  .wpcf7 .btn-group input[type=submit] + input[type=submit], .btn-group .btn + .btn-group,
+  .btn-group .wpcf7 input[type=submit] + .btn-group,
+  .wpcf7 .btn-group input[type=submit] + .btn-group, .btn-group .btn-group + .btn,
+  .btn-group .wpcf7 .btn-group + input[type=submit],
+  .wpcf7 .btn-group .btn-group + input[type=submit], .btn-group .btn-group + .btn-group,
   .btn-group-vertical .btn + .btn,
-  .btn-group-vertical .wpcf7 input[type=submit] + .btn, .wpcf7
-  .btn-group-vertical input[type=submit] + .btn,
-  .btn-group-vertical .wpcf7 .btn + input[type=submit], .wpcf7
-  .btn-group-vertical .btn + input[type=submit],
-  .btn-group-vertical .wpcf7 input[type=submit] + input[type=submit], .wpcf7
-  .btn-group-vertical input[type=submit] + input[type=submit],
-  .btn-group-vertical .btn + .btn-group,
-  .btn-group-vertical .wpcf7 input[type=submit] + .btn-group, .wpcf7
-  .btn-group-vertical input[type=submit] + .btn-group,
-  .btn-group-vertical .btn-group + .btn,
-  .btn-group-vertical .wpcf7 .btn-group + input[type=submit], .wpcf7
-  .btn-group-vertical .btn-group + input[type=submit],
-  .btn-group-vertical .btn-group + .btn-group {
+  .btn-group-vertical .wpcf7 input[type=submit] + .btn,
+  .wpcf7 .btn-group-vertical input[type=submit] + .btn, .btn-group-vertical .wpcf7 .btn + input[type=submit],
+  .wpcf7 .btn-group-vertical .btn + input[type=submit], .btn-group-vertical .wpcf7 input[type=submit] + input[type=submit],
+  .wpcf7 .btn-group-vertical input[type=submit] + input[type=submit], .btn-group-vertical .btn + .btn-group,
+  .btn-group-vertical .wpcf7 input[type=submit] + .btn-group,
+  .wpcf7 .btn-group-vertical input[type=submit] + .btn-group, .btn-group-vertical .btn-group + .btn,
+  .btn-group-vertical .wpcf7 .btn-group + input[type=submit],
+  .wpcf7 .btn-group-vertical .btn-group + input[type=submit], .btn-group-vertical .btn-group + .btn-group {
     margin-left: -1px; }
 
 .btn-toolbar {
@@ -2615,8 +2631,8 @@ tbody.collapse.show {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
 
-.btn-group > .btn:last-child:not(:first-child), .wpcf7 .btn-group > input[type=submit]:last-child:not(:first-child),
-.btn-group > .dropdown-toggle:not(:first-child) {
+.btn-group > .btn:last-child:not(:first-child),
+.wpcf7 .btn-group > input[type=submit]:last-child:not(:first-child), .btn-group > .dropdown-toggle:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -2626,8 +2642,8 @@ tbody.collapse.show {
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .wpcf7 .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type=submit] {
   border-radius: 0; }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .wpcf7 .btn-group > .btn-group:first-child:not(:last-child) > input[type=submit]:last-child,
-.btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.wpcf7 .btn-group > .btn-group:first-child:not(:last-child) > input[type=submit]:last-child, .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
@@ -2654,15 +2670,14 @@ tbody.collapse.show {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center; }
-  .btn-group-vertical .btn, .btn-group-vertical .wpcf7 input[type=submit], .wpcf7 .btn-group-vertical input[type=submit],
-  .btn-group-vertical .btn-group {
+  .btn-group-vertical .btn,
+  .btn-group-vertical .wpcf7 input[type=submit],
+  .wpcf7 .btn-group-vertical input[type=submit], .btn-group-vertical .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn + .btn, .wpcf7 .btn-group-vertical > input[type=submit] + .btn, .wpcf7 .btn-group-vertical > .btn + input[type=submit], .wpcf7 .btn-group-vertical > input[type=submit] + input[type=submit],
-  .btn-group-vertical > .btn + .btn-group, .wpcf7
-  .btn-group-vertical > input[type=submit] + .btn-group,
-  .btn-group-vertical > .btn-group + .btn, .wpcf7
-  .btn-group-vertical > .btn-group + input[type=submit],
-  .btn-group-vertical > .btn-group + .btn-group {
+  .btn-group-vertical > .btn + .btn,
+  .wpcf7 .btn-group-vertical > input[type=submit] + .btn, .wpcf7 .btn-group-vertical > .btn + input[type=submit], .wpcf7 .btn-group-vertical > input[type=submit] + input[type=submit], .btn-group-vertical > .btn + .btn-group,
+  .wpcf7 .btn-group-vertical > input[type=submit] + .btn-group, .btn-group-vertical > .btn-group + .btn,
+  .wpcf7 .btn-group-vertical > .btn-group + input[type=submit], .btn-group-vertical > .btn-group + .btn-group {
     margin-top: -1px;
     margin-left: 0; }
 
@@ -2680,8 +2695,8 @@ tbody.collapse.show {
 .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .wpcf7 .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type=submit] {
   border-radius: 0; }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .wpcf7 .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type=submit]:last-child,
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.wpcf7 .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type=submit]:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -2689,13 +2704,10 @@ tbody.collapse.show {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
 
-[data-toggle="buttons"] > .btn input[type="radio"], .wpcf7 [data-toggle="buttons"] > input[type=submit] input[type="radio"],
-[data-toggle="buttons"] > .btn input[type="checkbox"], .wpcf7
-[data-toggle="buttons"] > input[type=submit] input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group > .btn input[type="radio"], .wpcf7
-[data-toggle="buttons"] > .btn-group > input[type=submit] input[type="radio"],
-[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"], .wpcf7
-[data-toggle="buttons"] > .btn-group > input[type=submit] input[type="checkbox"] {
+[data-toggle="buttons"] > .btn input[type="radio"],
+.wpcf7 [data-toggle="buttons"] > input[type=submit] input[type="radio"], [data-toggle="buttons"] > .btn input[type="checkbox"],
+.wpcf7 [data-toggle="buttons"] > input[type=submit] input[type="checkbox"], [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
+.wpcf7 [data-toggle="buttons"] > .btn-group > input[type=submit] input[type="radio"], [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"], .wpcf7 [data-toggle="buttons"] > .btn-group > input[type=submit] input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
@@ -2704,303 +2716,165 @@ tbody.collapse.show {
   position: relative;
   display: flex;
   width: 100%; }
-  .input-group .form-control, .input-group .wpcf7 input[type=text], .wpcf7 .input-group input[type=text], .input-group
-  .wpcf7 input[type=search],
-  .wpcf7 .input-group input[type=search], .input-group
-  .wpcf7 input[type=url],
-  .wpcf7 .input-group input[type=url], .input-group
-  .wpcf7 input[type=tel],
-  .wpcf7 .input-group input[type=tel], .input-group
-  .wpcf7 input[type=number],
-  .wpcf7 .input-group input[type=number], .input-group
-  .wpcf7 input[type=range],
-  .wpcf7 .input-group input[type=range], .input-group
-  .wpcf7 input[type=date],
-  .wpcf7 .input-group input[type=date], .input-group
-  .wpcf7 input[type=month],
-  .wpcf7 .input-group input[type=month], .input-group
-  .wpcf7 input[type=week],
-  .wpcf7 .input-group input[type=week], .input-group
-  .wpcf7 input[type=time],
-  .wpcf7 .input-group input[type=time], .input-group
-  .wpcf7 input[type=datetime],
-  .wpcf7 .input-group input[type=datetime], .input-group
-  .wpcf7 input[type=datetime-local],
-  .wpcf7 .input-group input[type=datetime-local], .input-group
-  .wpcf7 input[type=color],
-  .wpcf7 .input-group input[type=color], .input-group
-  .wpcf7 input[type=email],
-  .wpcf7 .input-group input[type=email], .input-group
-  .wpcf7 input[type=file],
-  .wpcf7 .input-group input[type=file], .input-group
-  .wpcf7 input[type=submit],
-  .wpcf7 .input-group input[type=submit], .input-group
-  .wpcf7 select,
-  .wpcf7 .input-group select, .input-group
-  .wpcf7 textarea,
-  .wpcf7 .input-group textarea, .input-group .wpcf7 .wpcf7-validation-errors, .wpcf7 .input-group .wpcf7-validation-errors {
+  .input-group .form-control, .input-group .wpcf7 input[type=text], .wpcf7 .input-group input[type=text],
+  .input-group .wpcf7 input[type=search], .wpcf7 .input-group input[type=search],
+  .input-group .wpcf7 input[type=url], .wpcf7 .input-group input[type=url],
+  .input-group .wpcf7 input[type=tel], .wpcf7 .input-group input[type=tel],
+  .input-group .wpcf7 input[type=number], .wpcf7 .input-group input[type=number],
+  .input-group .wpcf7 input[type=range], .wpcf7 .input-group input[type=range],
+  .input-group .wpcf7 input[type=date], .wpcf7 .input-group input[type=date],
+  .input-group .wpcf7 input[type=month], .wpcf7 .input-group input[type=month],
+  .input-group .wpcf7 input[type=week], .wpcf7 .input-group input[type=week],
+  .input-group .wpcf7 input[type=time], .wpcf7 .input-group input[type=time],
+  .input-group .wpcf7 input[type=datetime], .wpcf7 .input-group input[type=datetime],
+  .input-group .wpcf7 input[type=datetime-local], .wpcf7 .input-group input[type=datetime-local],
+  .input-group .wpcf7 input[type=color], .wpcf7 .input-group input[type=color],
+  .input-group .wpcf7 input[type=email], .wpcf7 .input-group input[type=email],
+  .input-group .wpcf7 input[type=file], .wpcf7 .input-group input[type=file],
+  .input-group .wpcf7 input[type=submit], .wpcf7 .input-group input[type=submit],
+  .input-group .wpcf7 select, .wpcf7 .input-group select,
+  .input-group .wpcf7 textarea, .wpcf7 .input-group textarea, .input-group .wpcf7 .wpcf7-validation-errors, .wpcf7 .input-group .wpcf7-validation-errors {
     position: relative;
     z-index: 2;
     flex: 1 1 auto;
     width: 1%;
     margin-bottom: 0; }
-    .input-group .form-control:focus, .input-group .wpcf7 input[type=text]:focus, .wpcf7 .input-group input[type=text]:focus, .input-group
-    .wpcf7 input[type=search]:focus,
-    .wpcf7 .input-group input[type=search]:focus, .input-group
-    .wpcf7 input[type=url]:focus,
-    .wpcf7 .input-group input[type=url]:focus, .input-group
-    .wpcf7 input[type=tel]:focus,
-    .wpcf7 .input-group input[type=tel]:focus, .input-group
-    .wpcf7 input[type=number]:focus,
-    .wpcf7 .input-group input[type=number]:focus, .input-group
-    .wpcf7 input[type=range]:focus,
-    .wpcf7 .input-group input[type=range]:focus, .input-group
-    .wpcf7 input[type=date]:focus,
-    .wpcf7 .input-group input[type=date]:focus, .input-group
-    .wpcf7 input[type=month]:focus,
-    .wpcf7 .input-group input[type=month]:focus, .input-group
-    .wpcf7 input[type=week]:focus,
-    .wpcf7 .input-group input[type=week]:focus, .input-group
-    .wpcf7 input[type=time]:focus,
-    .wpcf7 .input-group input[type=time]:focus, .input-group
-    .wpcf7 input[type=datetime]:focus,
-    .wpcf7 .input-group input[type=datetime]:focus, .input-group
-    .wpcf7 input[type=datetime-local]:focus,
-    .wpcf7 .input-group input[type=datetime-local]:focus, .input-group
-    .wpcf7 input[type=color]:focus,
-    .wpcf7 .input-group input[type=color]:focus, .input-group
-    .wpcf7 input[type=email]:focus,
-    .wpcf7 .input-group input[type=email]:focus, .input-group
-    .wpcf7 input[type=file]:focus,
-    .wpcf7 .input-group input[type=file]:focus, .input-group
-    .wpcf7 input[type=submit]:focus,
-    .wpcf7 .input-group input[type=submit]:focus, .input-group
-    .wpcf7 select:focus,
-    .wpcf7 .input-group select:focus, .input-group
-    .wpcf7 textarea:focus,
-    .wpcf7 .input-group textarea:focus, .input-group .wpcf7 .wpcf7-validation-errors:focus, .wpcf7 .input-group .wpcf7-validation-errors:focus, .input-group .form-control:active, .input-group .wpcf7 input[type=text]:active, .wpcf7 .input-group input[type=text]:active, .input-group
-    .wpcf7 input[type=search]:active,
-    .wpcf7 .input-group input[type=search]:active, .input-group
-    .wpcf7 input[type=url]:active,
-    .wpcf7 .input-group input[type=url]:active, .input-group
-    .wpcf7 input[type=tel]:active,
-    .wpcf7 .input-group input[type=tel]:active, .input-group
-    .wpcf7 input[type=number]:active,
-    .wpcf7 .input-group input[type=number]:active, .input-group
-    .wpcf7 input[type=range]:active,
-    .wpcf7 .input-group input[type=range]:active, .input-group
-    .wpcf7 input[type=date]:active,
-    .wpcf7 .input-group input[type=date]:active, .input-group
-    .wpcf7 input[type=month]:active,
-    .wpcf7 .input-group input[type=month]:active, .input-group
-    .wpcf7 input[type=week]:active,
-    .wpcf7 .input-group input[type=week]:active, .input-group
-    .wpcf7 input[type=time]:active,
-    .wpcf7 .input-group input[type=time]:active, .input-group
-    .wpcf7 input[type=datetime]:active,
-    .wpcf7 .input-group input[type=datetime]:active, .input-group
-    .wpcf7 input[type=datetime-local]:active,
-    .wpcf7 .input-group input[type=datetime-local]:active, .input-group
-    .wpcf7 input[type=color]:active,
-    .wpcf7 .input-group input[type=color]:active, .input-group
-    .wpcf7 input[type=email]:active,
-    .wpcf7 .input-group input[type=email]:active, .input-group
-    .wpcf7 input[type=file]:active,
-    .wpcf7 .input-group input[type=file]:active, .input-group
-    .wpcf7 input[type=submit]:active,
-    .wpcf7 .input-group input[type=submit]:active, .input-group
-    .wpcf7 select:active,
-    .wpcf7 .input-group select:active, .input-group
-    .wpcf7 textarea:active,
-    .wpcf7 .input-group textarea:active, .input-group .wpcf7 .wpcf7-validation-errors:active, .wpcf7 .input-group .wpcf7-validation-errors:active, .input-group .form-control:hover, .input-group .wpcf7 input[type=text]:hover, .wpcf7 .input-group input[type=text]:hover, .input-group
-    .wpcf7 input[type=search]:hover,
-    .wpcf7 .input-group input[type=search]:hover, .input-group
-    .wpcf7 input[type=url]:hover,
-    .wpcf7 .input-group input[type=url]:hover, .input-group
-    .wpcf7 input[type=tel]:hover,
-    .wpcf7 .input-group input[type=tel]:hover, .input-group
-    .wpcf7 input[type=number]:hover,
-    .wpcf7 .input-group input[type=number]:hover, .input-group
-    .wpcf7 input[type=range]:hover,
-    .wpcf7 .input-group input[type=range]:hover, .input-group
-    .wpcf7 input[type=date]:hover,
-    .wpcf7 .input-group input[type=date]:hover, .input-group
-    .wpcf7 input[type=month]:hover,
-    .wpcf7 .input-group input[type=month]:hover, .input-group
-    .wpcf7 input[type=week]:hover,
-    .wpcf7 .input-group input[type=week]:hover, .input-group
-    .wpcf7 input[type=time]:hover,
-    .wpcf7 .input-group input[type=time]:hover, .input-group
-    .wpcf7 input[type=datetime]:hover,
-    .wpcf7 .input-group input[type=datetime]:hover, .input-group
-    .wpcf7 input[type=datetime-local]:hover,
-    .wpcf7 .input-group input[type=datetime-local]:hover, .input-group
-    .wpcf7 input[type=color]:hover,
-    .wpcf7 .input-group input[type=color]:hover, .input-group
-    .wpcf7 input[type=email]:hover,
-    .wpcf7 .input-group input[type=email]:hover, .input-group
-    .wpcf7 input[type=file]:hover,
-    .wpcf7 .input-group input[type=file]:hover, .input-group
-    .wpcf7 input[type=submit]:hover,
-    .wpcf7 .input-group input[type=submit]:hover, .input-group
-    .wpcf7 select:hover,
-    .wpcf7 .input-group select:hover, .input-group
-    .wpcf7 textarea:hover,
-    .wpcf7 .input-group textarea:hover, .input-group .wpcf7 .wpcf7-validation-errors:hover, .wpcf7 .input-group .wpcf7-validation-errors:hover {
+    .input-group .form-control:focus,
+    .input-group .wpcf7 input[type=text]:focus,
+    .wpcf7 .input-group input[type=text]:focus,
+    .input-group .wpcf7 input[type=search]:focus,
+    .wpcf7 .input-group input[type=search]:focus,
+    .input-group .wpcf7 input[type=url]:focus,
+    .wpcf7 .input-group input[type=url]:focus,
+    .input-group .wpcf7 input[type=tel]:focus,
+    .wpcf7 .input-group input[type=tel]:focus,
+    .input-group .wpcf7 input[type=number]:focus,
+    .wpcf7 .input-group input[type=number]:focus,
+    .input-group .wpcf7 input[type=range]:focus,
+    .wpcf7 .input-group input[type=range]:focus,
+    .input-group .wpcf7 input[type=date]:focus,
+    .wpcf7 .input-group input[type=date]:focus,
+    .input-group .wpcf7 input[type=month]:focus,
+    .wpcf7 .input-group input[type=month]:focus,
+    .input-group .wpcf7 input[type=week]:focus,
+    .wpcf7 .input-group input[type=week]:focus,
+    .input-group .wpcf7 input[type=time]:focus,
+    .wpcf7 .input-group input[type=time]:focus,
+    .input-group .wpcf7 input[type=datetime]:focus,
+    .wpcf7 .input-group input[type=datetime]:focus,
+    .input-group .wpcf7 input[type=datetime-local]:focus,
+    .wpcf7 .input-group input[type=datetime-local]:focus,
+    .input-group .wpcf7 input[type=color]:focus,
+    .wpcf7 .input-group input[type=color]:focus,
+    .input-group .wpcf7 input[type=email]:focus,
+    .wpcf7 .input-group input[type=email]:focus,
+    .input-group .wpcf7 input[type=file]:focus,
+    .wpcf7 .input-group input[type=file]:focus,
+    .input-group .wpcf7 input[type=submit]:focus,
+    .wpcf7 .input-group input[type=submit]:focus,
+    .input-group .wpcf7 select:focus,
+    .wpcf7 .input-group select:focus,
+    .input-group .wpcf7 textarea:focus,
+    .wpcf7 .input-group textarea:focus, .input-group .wpcf7 .wpcf7-validation-errors:focus,
+    .wpcf7 .input-group .wpcf7-validation-errors:focus, .input-group .form-control:active,
+    .input-group .wpcf7 input[type=text]:active,
+    .wpcf7 .input-group input[type=text]:active,
+    .input-group .wpcf7 input[type=search]:active,
+    .wpcf7 .input-group input[type=search]:active,
+    .input-group .wpcf7 input[type=url]:active,
+    .wpcf7 .input-group input[type=url]:active,
+    .input-group .wpcf7 input[type=tel]:active,
+    .wpcf7 .input-group input[type=tel]:active,
+    .input-group .wpcf7 input[type=number]:active,
+    .wpcf7 .input-group input[type=number]:active,
+    .input-group .wpcf7 input[type=range]:active,
+    .wpcf7 .input-group input[type=range]:active,
+    .input-group .wpcf7 input[type=date]:active,
+    .wpcf7 .input-group input[type=date]:active,
+    .input-group .wpcf7 input[type=month]:active,
+    .wpcf7 .input-group input[type=month]:active,
+    .input-group .wpcf7 input[type=week]:active,
+    .wpcf7 .input-group input[type=week]:active,
+    .input-group .wpcf7 input[type=time]:active,
+    .wpcf7 .input-group input[type=time]:active,
+    .input-group .wpcf7 input[type=datetime]:active,
+    .wpcf7 .input-group input[type=datetime]:active,
+    .input-group .wpcf7 input[type=datetime-local]:active,
+    .wpcf7 .input-group input[type=datetime-local]:active,
+    .input-group .wpcf7 input[type=color]:active,
+    .wpcf7 .input-group input[type=color]:active,
+    .input-group .wpcf7 input[type=email]:active,
+    .wpcf7 .input-group input[type=email]:active,
+    .input-group .wpcf7 input[type=file]:active,
+    .wpcf7 .input-group input[type=file]:active,
+    .input-group .wpcf7 input[type=submit]:active,
+    .wpcf7 .input-group input[type=submit]:active,
+    .input-group .wpcf7 select:active,
+    .wpcf7 .input-group select:active,
+    .input-group .wpcf7 textarea:active,
+    .wpcf7 .input-group textarea:active, .input-group .wpcf7 .wpcf7-validation-errors:active,
+    .wpcf7 .input-group .wpcf7-validation-errors:active, .input-group .form-control:hover, .input-group .wpcf7 input[type=text]:hover, .wpcf7 .input-group input[type=text]:hover,
+    .input-group .wpcf7 input[type=search]:hover, .wpcf7 .input-group input[type=search]:hover,
+    .input-group .wpcf7 input[type=url]:hover, .wpcf7 .input-group input[type=url]:hover,
+    .input-group .wpcf7 input[type=tel]:hover, .wpcf7 .input-group input[type=tel]:hover,
+    .input-group .wpcf7 input[type=number]:hover, .wpcf7 .input-group input[type=number]:hover,
+    .input-group .wpcf7 input[type=range]:hover, .wpcf7 .input-group input[type=range]:hover,
+    .input-group .wpcf7 input[type=date]:hover, .wpcf7 .input-group input[type=date]:hover,
+    .input-group .wpcf7 input[type=month]:hover, .wpcf7 .input-group input[type=month]:hover,
+    .input-group .wpcf7 input[type=week]:hover, .wpcf7 .input-group input[type=week]:hover,
+    .input-group .wpcf7 input[type=time]:hover, .wpcf7 .input-group input[type=time]:hover,
+    .input-group .wpcf7 input[type=datetime]:hover, .wpcf7 .input-group input[type=datetime]:hover,
+    .input-group .wpcf7 input[type=datetime-local]:hover, .wpcf7 .input-group input[type=datetime-local]:hover,
+    .input-group .wpcf7 input[type=color]:hover, .wpcf7 .input-group input[type=color]:hover,
+    .input-group .wpcf7 input[type=email]:hover, .wpcf7 .input-group input[type=email]:hover,
+    .input-group .wpcf7 input[type=file]:hover, .wpcf7 .input-group input[type=file]:hover,
+    .input-group .wpcf7 input[type=submit]:hover, .wpcf7 .input-group input[type=submit]:hover,
+    .input-group .wpcf7 select:hover, .wpcf7 .input-group select:hover,
+    .input-group .wpcf7 textarea:hover, .wpcf7 .input-group textarea:hover, .input-group .wpcf7 .wpcf7-validation-errors:hover, .wpcf7 .input-group .wpcf7-validation-errors:hover {
       z-index: 3; }
 
 .input-group-addon,
 .input-group-btn,
-.input-group .form-control,
-.input-group .wpcf7 input[type=text], .wpcf7
-.input-group input[type=text],
-.input-group
-.wpcf7 input[type=search],
-.wpcf7
-.input-group input[type=search],
-.input-group
-.wpcf7 input[type=url],
-.wpcf7
-.input-group input[type=url],
-.input-group
-.wpcf7 input[type=tel],
-.wpcf7
-.input-group input[type=tel],
-.input-group
-.wpcf7 input[type=number],
-.wpcf7
-.input-group input[type=number],
-.input-group
-.wpcf7 input[type=range],
-.wpcf7
-.input-group input[type=range],
-.input-group
-.wpcf7 input[type=date],
-.wpcf7
-.input-group input[type=date],
-.input-group
-.wpcf7 input[type=month],
-.wpcf7
-.input-group input[type=month],
-.input-group
-.wpcf7 input[type=week],
-.wpcf7
-.input-group input[type=week],
-.input-group
-.wpcf7 input[type=time],
-.wpcf7
-.input-group input[type=time],
-.input-group
-.wpcf7 input[type=datetime],
-.wpcf7
-.input-group input[type=datetime],
-.input-group
-.wpcf7 input[type=datetime-local],
-.wpcf7
-.input-group input[type=datetime-local],
-.input-group
-.wpcf7 input[type=color],
-.wpcf7
-.input-group input[type=color],
-.input-group
-.wpcf7 input[type=email],
-.wpcf7
-.input-group input[type=email],
-.input-group
-.wpcf7 input[type=file],
-.wpcf7
-.input-group input[type=file],
-.input-group
-.wpcf7 input[type=submit],
-.wpcf7
-.input-group input[type=submit],
-.input-group
-.wpcf7 select,
-.wpcf7
-.input-group select,
-.input-group
-.wpcf7 textarea,
-.wpcf7
-.input-group textarea,
-.input-group .wpcf7 .wpcf7-validation-errors, .wpcf7
-.input-group .wpcf7-validation-errors {
+.input-group .form-control, .input-group .wpcf7 input[type=text], .wpcf7 .input-group input[type=text],
+.input-group .wpcf7 input[type=search], .wpcf7 .input-group input[type=search],
+.input-group .wpcf7 input[type=url], .wpcf7 .input-group input[type=url],
+.input-group .wpcf7 input[type=tel], .wpcf7 .input-group input[type=tel],
+.input-group .wpcf7 input[type=number], .wpcf7 .input-group input[type=number],
+.input-group .wpcf7 input[type=range], .wpcf7 .input-group input[type=range],
+.input-group .wpcf7 input[type=date], .wpcf7 .input-group input[type=date],
+.input-group .wpcf7 input[type=month], .wpcf7 .input-group input[type=month],
+.input-group .wpcf7 input[type=week], .wpcf7 .input-group input[type=week],
+.input-group .wpcf7 input[type=time], .wpcf7 .input-group input[type=time],
+.input-group .wpcf7 input[type=datetime], .wpcf7 .input-group input[type=datetime],
+.input-group .wpcf7 input[type=datetime-local], .wpcf7 .input-group input[type=datetime-local],
+.input-group .wpcf7 input[type=color], .wpcf7 .input-group input[type=color],
+.input-group .wpcf7 input[type=email], .wpcf7 .input-group input[type=email],
+.input-group .wpcf7 input[type=file], .wpcf7 .input-group input[type=file],
+.input-group .wpcf7 input[type=submit], .wpcf7 .input-group input[type=submit],
+.input-group .wpcf7 select, .wpcf7 .input-group select,
+.input-group .wpcf7 textarea, .wpcf7 .input-group textarea, .input-group .wpcf7 .wpcf7-validation-errors, .wpcf7 .input-group .wpcf7-validation-errors {
   display: flex;
   align-items: center; }
   .input-group-addon:not(:first-child):not(:last-child),
   .input-group-btn:not(:first-child):not(:last-child),
-  .input-group .form-control:not(:first-child):not(:last-child),
-  .input-group .wpcf7 input[type=text]:not(:first-child):not(:last-child), .wpcf7
-  .input-group input[type=text]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=search]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=search]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=url]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=url]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=tel]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=tel]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=number]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=number]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=range]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=range]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=date]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=date]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=month]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=month]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=week]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=week]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=time]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=time]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=datetime]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=datetime]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=datetime-local]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=datetime-local]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=color]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=color]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=email]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=email]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=file]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=file]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 input[type=submit]:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group input[type=submit]:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 select:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group select:not(:first-child):not(:last-child),
-  .input-group
-  .wpcf7 textarea:not(:first-child):not(:last-child),
-  .wpcf7
-  .input-group textarea:not(:first-child):not(:last-child),
-  .input-group .wpcf7 .wpcf7-validation-errors:not(:first-child):not(:last-child), .wpcf7
-  .input-group .wpcf7-validation-errors:not(:first-child):not(:last-child) {
+  .input-group .form-control:not(:first-child):not(:last-child), .input-group .wpcf7 input[type=text]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=text]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=search]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=search]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=url]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=url]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=tel]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=tel]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=number]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=number]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=range]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=range]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=date]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=date]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=month]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=month]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=week]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=week]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=time]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=time]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=datetime]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=datetime]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=datetime-local]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=datetime-local]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=color]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=color]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=email]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=email]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=file]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=file]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 input[type=submit]:not(:first-child):not(:last-child), .wpcf7 .input-group input[type=submit]:not(:first-child):not(:last-child),
+  .input-group .wpcf7 select:not(:first-child):not(:last-child), .wpcf7 .input-group select:not(:first-child):not(:last-child),
+  .input-group .wpcf7 textarea:not(:first-child):not(:last-child), .wpcf7 .input-group textarea:not(:first-child):not(:last-child), .input-group .wpcf7 .wpcf7-validation-errors:not(:first-child):not(:last-child), .wpcf7 .input-group .wpcf7-validation-errors:not(:first-child):not(:last-child) {
     border-radius: 0; }
 
 .input-group-addon,
@@ -3037,10 +2911,8 @@ tbody.collapse.show {
   .wpcf7 .input-group-sm > input.input-group-addon[type=file],
   .wpcf7 .input-group-sm > input.input-group-addon[type=submit],
   .wpcf7 .input-group-sm > select.input-group-addon,
-  .wpcf7 .input-group-sm > textarea.input-group-addon, .wpcf7 .input-group-sm > .input-group-addon.wpcf7-validation-errors,
-  .input-group-sm > .input-group-addon,
-  .input-group-sm > .input-group-btn > .input-group-addon.btn, .wpcf7
-  .input-group-sm > .input-group-btn > input.input-group-addon[type=submit] {
+  .wpcf7 .input-group-sm > textarea.input-group-addon, .wpcf7 .input-group-sm > .input-group-addon.wpcf7-validation-errors, .input-group-sm > .input-group-addon,
+  .input-group-sm > .input-group-btn > .input-group-addon.btn, .wpcf7 .input-group-sm > .input-group-btn > input.input-group-addon[type=submit] {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
     border-radius: 0.2rem; }
@@ -3061,10 +2933,8 @@ tbody.collapse.show {
   .wpcf7 .input-group-lg > input.input-group-addon[type=file],
   .wpcf7 .input-group-lg > input.input-group-addon[type=submit],
   .wpcf7 .input-group-lg > select.input-group-addon,
-  .wpcf7 .input-group-lg > textarea.input-group-addon, .wpcf7 .input-group-lg > .input-group-addon.wpcf7-validation-errors,
-  .input-group-lg > .input-group-addon,
-  .input-group-lg > .input-group-btn > .input-group-addon.btn, .wpcf7
-  .input-group-lg > .input-group-btn > input.input-group-addon[type=submit] {
+  .wpcf7 .input-group-lg > textarea.input-group-addon, .wpcf7 .input-group-lg > .input-group-addon.wpcf7-validation-errors, .input-group-lg > .input-group-addon,
+  .input-group-lg > .input-group-btn > .input-group-addon.btn, .wpcf7 .input-group-lg > .input-group-btn > input.input-group-addon[type=submit] {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
     border-radius: 0.3rem; }
@@ -3072,102 +2942,98 @@ tbody.collapse.show {
   .input-group-addon input[type="checkbox"] {
     margin-top: 0; }
 
-.input-group .form-control:not(:last-child), .input-group .wpcf7 input[type=text]:not(:last-child), .wpcf7 .input-group input[type=text]:not(:last-child), .input-group
-.wpcf7 input[type=search]:not(:last-child),
-.wpcf7 .input-group input[type=search]:not(:last-child), .input-group
-.wpcf7 input[type=url]:not(:last-child),
-.wpcf7 .input-group input[type=url]:not(:last-child), .input-group
-.wpcf7 input[type=tel]:not(:last-child),
-.wpcf7 .input-group input[type=tel]:not(:last-child), .input-group
-.wpcf7 input[type=number]:not(:last-child),
-.wpcf7 .input-group input[type=number]:not(:last-child), .input-group
-.wpcf7 input[type=range]:not(:last-child),
-.wpcf7 .input-group input[type=range]:not(:last-child), .input-group
-.wpcf7 input[type=date]:not(:last-child),
-.wpcf7 .input-group input[type=date]:not(:last-child), .input-group
-.wpcf7 input[type=month]:not(:last-child),
-.wpcf7 .input-group input[type=month]:not(:last-child), .input-group
-.wpcf7 input[type=week]:not(:last-child),
-.wpcf7 .input-group input[type=week]:not(:last-child), .input-group
-.wpcf7 input[type=time]:not(:last-child),
-.wpcf7 .input-group input[type=time]:not(:last-child), .input-group
-.wpcf7 input[type=datetime]:not(:last-child),
-.wpcf7 .input-group input[type=datetime]:not(:last-child), .input-group
-.wpcf7 input[type=datetime-local]:not(:last-child),
-.wpcf7 .input-group input[type=datetime-local]:not(:last-child), .input-group
-.wpcf7 input[type=color]:not(:last-child),
-.wpcf7 .input-group input[type=color]:not(:last-child), .input-group
-.wpcf7 input[type=email]:not(:last-child),
-.wpcf7 .input-group input[type=email]:not(:last-child), .input-group
-.wpcf7 input[type=file]:not(:last-child),
-.wpcf7 .input-group input[type=file]:not(:last-child), .input-group
-.wpcf7 input[type=submit]:not(:last-child),
-.wpcf7 .input-group input[type=submit]:not(:last-child), .input-group
-.wpcf7 select:not(:last-child),
-.wpcf7 .input-group select:not(:last-child), .input-group
-.wpcf7 textarea:not(:last-child),
-.wpcf7 .input-group textarea:not(:last-child), .input-group .wpcf7 .wpcf7-validation-errors:not(:last-child), .wpcf7 .input-group .wpcf7-validation-errors:not(:last-child),
-.input-group-addon:not(:last-child),
-.input-group-btn:not(:last-child) > .btn, .wpcf7
-.input-group-btn:not(:last-child) > input[type=submit],
-.input-group-btn:not(:last-child) > .btn-group > .btn, .wpcf7
-.input-group-btn:not(:last-child) > .btn-group > input[type=submit],
-.input-group-btn:not(:last-child) > .dropdown-toggle,
-.input-group-btn:not(:first-child) > .btn:not(:last-child):not(.dropdown-toggle), .wpcf7
-.input-group-btn:not(:first-child) > input[type=submit]:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .btn, .wpcf7
-.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > input[type=submit] {
+.input-group .form-control:not(:last-child),
+.input-group .wpcf7 input[type=text]:not(:last-child),
+.wpcf7 .input-group input[type=text]:not(:last-child),
+.input-group .wpcf7 input[type=search]:not(:last-child),
+.wpcf7 .input-group input[type=search]:not(:last-child),
+.input-group .wpcf7 input[type=url]:not(:last-child),
+.wpcf7 .input-group input[type=url]:not(:last-child),
+.input-group .wpcf7 input[type=tel]:not(:last-child),
+.wpcf7 .input-group input[type=tel]:not(:last-child),
+.input-group .wpcf7 input[type=number]:not(:last-child),
+.wpcf7 .input-group input[type=number]:not(:last-child),
+.input-group .wpcf7 input[type=range]:not(:last-child),
+.wpcf7 .input-group input[type=range]:not(:last-child),
+.input-group .wpcf7 input[type=date]:not(:last-child),
+.wpcf7 .input-group input[type=date]:not(:last-child),
+.input-group .wpcf7 input[type=month]:not(:last-child),
+.wpcf7 .input-group input[type=month]:not(:last-child),
+.input-group .wpcf7 input[type=week]:not(:last-child),
+.wpcf7 .input-group input[type=week]:not(:last-child),
+.input-group .wpcf7 input[type=time]:not(:last-child),
+.wpcf7 .input-group input[type=time]:not(:last-child),
+.input-group .wpcf7 input[type=datetime]:not(:last-child),
+.wpcf7 .input-group input[type=datetime]:not(:last-child),
+.input-group .wpcf7 input[type=datetime-local]:not(:last-child),
+.wpcf7 .input-group input[type=datetime-local]:not(:last-child),
+.input-group .wpcf7 input[type=color]:not(:last-child),
+.wpcf7 .input-group input[type=color]:not(:last-child),
+.input-group .wpcf7 input[type=email]:not(:last-child),
+.wpcf7 .input-group input[type=email]:not(:last-child),
+.input-group .wpcf7 input[type=file]:not(:last-child),
+.wpcf7 .input-group input[type=file]:not(:last-child),
+.input-group .wpcf7 input[type=submit]:not(:last-child),
+.wpcf7 .input-group input[type=submit]:not(:last-child),
+.input-group .wpcf7 select:not(:last-child),
+.wpcf7 .input-group select:not(:last-child),
+.input-group .wpcf7 textarea:not(:last-child),
+.wpcf7 .input-group textarea:not(:last-child), .input-group .wpcf7 .wpcf7-validation-errors:not(:last-child),
+.wpcf7 .input-group .wpcf7-validation-errors:not(:last-child), .input-group-addon:not(:last-child),
+.input-group-btn:not(:last-child) > .btn,
+.wpcf7 .input-group-btn:not(:last-child) > input[type=submit], .input-group-btn:not(:last-child) > .btn-group > .btn,
+.wpcf7 .input-group-btn:not(:last-child) > .btn-group > input[type=submit], .input-group-btn:not(:last-child) > .dropdown-toggle,
+.input-group-btn:not(:first-child) > .btn:not(:last-child):not(.dropdown-toggle),
+.wpcf7 .input-group-btn:not(:first-child) > input[type=submit]:not(:last-child):not(.dropdown-toggle), .input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .btn, .wpcf7 .input-group-btn:not(:first-child) > .btn-group:not(:last-child) > input[type=submit] {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
 .input-group-addon:not(:last-child) {
   border-right: 0; }
 
-.input-group .form-control:not(:first-child), .input-group .wpcf7 input[type=text]:not(:first-child), .wpcf7 .input-group input[type=text]:not(:first-child), .input-group
-.wpcf7 input[type=search]:not(:first-child),
-.wpcf7 .input-group input[type=search]:not(:first-child), .input-group
-.wpcf7 input[type=url]:not(:first-child),
-.wpcf7 .input-group input[type=url]:not(:first-child), .input-group
-.wpcf7 input[type=tel]:not(:first-child),
-.wpcf7 .input-group input[type=tel]:not(:first-child), .input-group
-.wpcf7 input[type=number]:not(:first-child),
-.wpcf7 .input-group input[type=number]:not(:first-child), .input-group
-.wpcf7 input[type=range]:not(:first-child),
-.wpcf7 .input-group input[type=range]:not(:first-child), .input-group
-.wpcf7 input[type=date]:not(:first-child),
-.wpcf7 .input-group input[type=date]:not(:first-child), .input-group
-.wpcf7 input[type=month]:not(:first-child),
-.wpcf7 .input-group input[type=month]:not(:first-child), .input-group
-.wpcf7 input[type=week]:not(:first-child),
-.wpcf7 .input-group input[type=week]:not(:first-child), .input-group
-.wpcf7 input[type=time]:not(:first-child),
-.wpcf7 .input-group input[type=time]:not(:first-child), .input-group
-.wpcf7 input[type=datetime]:not(:first-child),
-.wpcf7 .input-group input[type=datetime]:not(:first-child), .input-group
-.wpcf7 input[type=datetime-local]:not(:first-child),
-.wpcf7 .input-group input[type=datetime-local]:not(:first-child), .input-group
-.wpcf7 input[type=color]:not(:first-child),
-.wpcf7 .input-group input[type=color]:not(:first-child), .input-group
-.wpcf7 input[type=email]:not(:first-child),
-.wpcf7 .input-group input[type=email]:not(:first-child), .input-group
-.wpcf7 input[type=file]:not(:first-child),
-.wpcf7 .input-group input[type=file]:not(:first-child), .input-group
-.wpcf7 input[type=submit]:not(:first-child),
-.wpcf7 .input-group input[type=submit]:not(:first-child), .input-group
-.wpcf7 select:not(:first-child),
-.wpcf7 .input-group select:not(:first-child), .input-group
-.wpcf7 textarea:not(:first-child),
-.wpcf7 .input-group textarea:not(:first-child), .input-group .wpcf7 .wpcf7-validation-errors:not(:first-child), .wpcf7 .input-group .wpcf7-validation-errors:not(:first-child),
-.input-group-addon:not(:first-child),
-.input-group-btn:not(:first-child) > .btn, .wpcf7
-.input-group-btn:not(:first-child) > input[type=submit],
-.input-group-btn:not(:first-child) > .btn-group > .btn, .wpcf7
-.input-group-btn:not(:first-child) > .btn-group > input[type=submit],
-.input-group-btn:not(:first-child) > .dropdown-toggle,
-.input-group-btn:not(:last-child) > .btn:not(:first-child), .wpcf7
-.input-group-btn:not(:last-child) > input[type=submit]:not(:first-child),
-.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .btn, .wpcf7
-.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > input[type=submit] {
+.input-group .form-control:not(:first-child),
+.input-group .wpcf7 input[type=text]:not(:first-child),
+.wpcf7 .input-group input[type=text]:not(:first-child),
+.input-group .wpcf7 input[type=search]:not(:first-child),
+.wpcf7 .input-group input[type=search]:not(:first-child),
+.input-group .wpcf7 input[type=url]:not(:first-child),
+.wpcf7 .input-group input[type=url]:not(:first-child),
+.input-group .wpcf7 input[type=tel]:not(:first-child),
+.wpcf7 .input-group input[type=tel]:not(:first-child),
+.input-group .wpcf7 input[type=number]:not(:first-child),
+.wpcf7 .input-group input[type=number]:not(:first-child),
+.input-group .wpcf7 input[type=range]:not(:first-child),
+.wpcf7 .input-group input[type=range]:not(:first-child),
+.input-group .wpcf7 input[type=date]:not(:first-child),
+.wpcf7 .input-group input[type=date]:not(:first-child),
+.input-group .wpcf7 input[type=month]:not(:first-child),
+.wpcf7 .input-group input[type=month]:not(:first-child),
+.input-group .wpcf7 input[type=week]:not(:first-child),
+.wpcf7 .input-group input[type=week]:not(:first-child),
+.input-group .wpcf7 input[type=time]:not(:first-child),
+.wpcf7 .input-group input[type=time]:not(:first-child),
+.input-group .wpcf7 input[type=datetime]:not(:first-child),
+.wpcf7 .input-group input[type=datetime]:not(:first-child),
+.input-group .wpcf7 input[type=datetime-local]:not(:first-child),
+.wpcf7 .input-group input[type=datetime-local]:not(:first-child),
+.input-group .wpcf7 input[type=color]:not(:first-child),
+.wpcf7 .input-group input[type=color]:not(:first-child),
+.input-group .wpcf7 input[type=email]:not(:first-child),
+.wpcf7 .input-group input[type=email]:not(:first-child),
+.input-group .wpcf7 input[type=file]:not(:first-child),
+.wpcf7 .input-group input[type=file]:not(:first-child),
+.input-group .wpcf7 input[type=submit]:not(:first-child),
+.wpcf7 .input-group input[type=submit]:not(:first-child),
+.input-group .wpcf7 select:not(:first-child),
+.wpcf7 .input-group select:not(:first-child),
+.input-group .wpcf7 textarea:not(:first-child),
+.wpcf7 .input-group textarea:not(:first-child), .input-group .wpcf7 .wpcf7-validation-errors:not(:first-child),
+.wpcf7 .input-group .wpcf7-validation-errors:not(:first-child), .input-group-addon:not(:first-child),
+.input-group-btn:not(:first-child) > .btn,
+.wpcf7 .input-group-btn:not(:first-child) > input[type=submit], .input-group-btn:not(:first-child) > .btn-group > .btn,
+.wpcf7 .input-group-btn:not(:first-child) > .btn-group > input[type=submit], .input-group-btn:not(:first-child) > .dropdown-toggle,
+.input-group-btn:not(:last-child) > .btn:not(:first-child),
+.wpcf7 .input-group-btn:not(:last-child) > input[type=submit]:not(:first-child), .input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .btn, .wpcf7 .input-group-btn:not(:last-child) > .btn-group:not(:first-child) > input[type=submit] {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -3201,17 +3067,21 @@ tbody.collapse.show {
     border: 1px solid rgba(0, 0, 0, 0.15); }
     .input-group-btn > .btn + .btn, .wpcf7 .input-group-btn > input[type=submit] + .btn, .wpcf7 .input-group-btn > .btn + input[type=submit], .wpcf7 .input-group-btn > input[type=submit] + input[type=submit] {
       margin-left: -1px; }
-    .input-group-btn > .btn:focus, .wpcf7 .input-group-btn > input[type=submit]:focus, .input-group-btn > .btn:active, .wpcf7 .input-group-btn > input[type=submit]:active, .input-group-btn > .btn:hover, .wpcf7 .input-group-btn > input[type=submit]:hover {
+    .input-group-btn > .btn:focus,
+    .wpcf7 .input-group-btn > input[type=submit]:focus, .input-group-btn > .btn:active,
+    .wpcf7 .input-group-btn > input[type=submit]:active, .input-group-btn > .btn:hover, .wpcf7 .input-group-btn > input[type=submit]:hover {
       z-index: 3; }
-  .input-group-btn:not(:last-child) > .btn, .wpcf7 .input-group-btn:not(:last-child) > input[type=submit],
-  .input-group-btn:not(:last-child) > .btn-group {
+  .input-group-btn:not(:last-child) > .btn,
+  .wpcf7 .input-group-btn:not(:last-child) > input[type=submit], .input-group-btn:not(:last-child) > .btn-group {
     margin-right: -1px; }
-  .input-group-btn:not(:first-child) > .btn, .wpcf7 .input-group-btn:not(:first-child) > input[type=submit],
-  .input-group-btn:not(:first-child) > .btn-group {
+  .input-group-btn:not(:first-child) > .btn,
+  .wpcf7 .input-group-btn:not(:first-child) > input[type=submit], .input-group-btn:not(:first-child) > .btn-group {
     z-index: 2;
     margin-left: -1px; }
-    .input-group-btn:not(:first-child) > .btn:focus, .wpcf7 .input-group-btn:not(:first-child) > input[type=submit]:focus, .input-group-btn:not(:first-child) > .btn:active, .wpcf7 .input-group-btn:not(:first-child) > input[type=submit]:active, .input-group-btn:not(:first-child) > .btn:hover, .wpcf7 .input-group-btn:not(:first-child) > input[type=submit]:hover,
-    .input-group-btn:not(:first-child) > .btn-group:focus,
+    .input-group-btn:not(:first-child) > .btn:focus,
+    .wpcf7 .input-group-btn:not(:first-child) > input[type=submit]:focus, .input-group-btn:not(:first-child) > .btn:active,
+    .wpcf7 .input-group-btn:not(:first-child) > input[type=submit]:active, .input-group-btn:not(:first-child) > .btn:hover,
+    .wpcf7 .input-group-btn:not(:first-child) > input[type=submit]:hover, .input-group-btn:not(:first-child) > .btn-group:focus,
     .input-group-btn:not(:first-child) > .btn-group:active,
     .input-group-btn:not(:first-child) > .btn-group:hover {
       z-index: 3; }
@@ -3370,7 +3240,8 @@ tbody.collapse.show {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem; }
-  .nav-link:focus, .nav-link:hover {
+  .nav-link:focus,
+  .nav-link:hover {
     text-decoration: none; }
   .nav-link.disabled {
     color: #868e96; }
@@ -3383,7 +3254,8 @@ tbody.collapse.show {
     border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem; }
-    .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    .nav-tabs .nav-link:focus,
+    .nav-tabs .nav-link:hover {
       border-color: #e9ecef #e9ecef #ddd; }
     .nav-tabs .nav-link.disabled {
       color: #868e96;
@@ -3443,7 +3315,8 @@ tbody.collapse.show {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap; }
-  .navbar-brand:focus, .navbar-brand:hover {
+  .navbar-brand:focus,
+  .navbar-brand:hover {
     text-decoration: none; }
 
 .navbar-nav {
@@ -3475,7 +3348,8 @@ tbody.collapse.show {
   background: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem; }
-  .navbar-toggler:focus, .navbar-toggler:hover {
+  .navbar-toggler:focus,
+  .navbar-toggler:hover {
     text-decoration: none; }
 
 .navbar-toggler-icon {
@@ -3631,12 +3505,14 @@ tbody.collapse.show {
 
 .navbar-light .navbar-brand {
   color: rgba(0, 0, 0, 0.9); }
-  .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+  .navbar-light .navbar-brand:focus,
+  .navbar-light .navbar-brand:hover {
     color: rgba(0, 0, 0, 0.9); }
 
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.5); }
-  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  .navbar-light .navbar-nav .nav-link:focus,
+  .navbar-light .navbar-nav .nav-link:hover {
     color: rgba(0, 0, 0, 0.7); }
   .navbar-light .navbar-nav .nav-link.disabled {
     color: rgba(0, 0, 0, 0.3); }
@@ -3659,12 +3535,14 @@ tbody.collapse.show {
 
 .navbar-dark .navbar-brand {
   color: white; }
-  .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+  .navbar-dark .navbar-brand:focus,
+  .navbar-dark .navbar-brand:hover {
     color: white; }
 
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.5); }
-  .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75); }
   .navbar-dark .navbar-nav .nav-link.disabled {
     color: rgba(255, 255, 255, 0.25); }
@@ -3886,7 +3764,8 @@ tbody.collapse.show {
   color: #007bff;
   background-color: #fff;
   border: 1px solid #ddd; }
-  .page-link:focus, .page-link:hover {
+  .page-link:focus,
+  .page-link:hover {
     color: #0056b3;
     text-decoration: none;
     background-color: #e9ecef;
@@ -3944,7 +3823,8 @@ tbody.collapse.show {
 .badge-primary {
   color: #fff;
   background-color: #007bff; }
-  .badge-primary[href]:focus, .badge-primary[href]:hover {
+  .badge-primary[href]:focus,
+  .badge-primary[href]:hover {
     color: #fff;
     text-decoration: none;
     background-color: #0062cc; }
@@ -3952,15 +3832,17 @@ tbody.collapse.show {
 .badge-secondary {
   color: #fff;
   background-color: #868e96; }
-  .badge-secondary[href]:focus, .badge-secondary[href]:hover {
+  .badge-secondary[href]:focus,
+  .badge-secondary[href]:hover {
     color: #fff;
     text-decoration: none;
-    background-color: #6c757d; }
+    background-color: #6c747d; }
 
 .badge-success {
   color: #fff;
   background-color: #28a745; }
-  .badge-success[href]:focus, .badge-success[href]:hover {
+  .badge-success[href]:focus,
+  .badge-success[href]:hover {
     color: #fff;
     text-decoration: none;
     background-color: #1e7e34; }
@@ -3968,7 +3850,8 @@ tbody.collapse.show {
 .badge-info {
   color: #fff;
   background-color: #17a2b8; }
-  .badge-info[href]:focus, .badge-info[href]:hover {
+  .badge-info[href]:focus,
+  .badge-info[href]:hover {
     color: #fff;
     text-decoration: none;
     background-color: #117a8b; }
@@ -3976,7 +3859,8 @@ tbody.collapse.show {
 .badge-warning {
   color: #111;
   background-color: #ffc107; }
-  .badge-warning[href]:focus, .badge-warning[href]:hover {
+  .badge-warning[href]:focus,
+  .badge-warning[href]:hover {
     color: #111;
     text-decoration: none;
     background-color: #d39e00; }
@@ -3984,7 +3868,8 @@ tbody.collapse.show {
 .badge-danger {
   color: #fff;
   background-color: #dc3545; }
-  .badge-danger[href]:focus, .badge-danger[href]:hover {
+  .badge-danger[href]:focus,
+  .badge-danger[href]:hover {
     color: #fff;
     text-decoration: none;
     background-color: #bd2130; }
@@ -3992,7 +3877,8 @@ tbody.collapse.show {
 .badge-light {
   color: #111;
   background-color: #f8f9fa; }
-  .badge-light[href]:focus, .badge-light[href]:hover {
+  .badge-light[href]:focus,
+  .badge-light[href]:hover {
     color: #111;
     text-decoration: none;
     background-color: #dae0e5; }
@@ -4000,7 +3886,8 @@ tbody.collapse.show {
 .badge-dark {
   color: #fff;
   background-color: #343a40; }
-  .badge-dark[href]:focus, .badge-dark[href]:hover {
+  .badge-dark[href]:focus,
+  .badge-dark[href]:hover {
     color: #fff;
     text-decoration: none;
     background-color: #1d2124; }
@@ -4097,7 +3984,7 @@ tbody.collapse.show {
   background-color: #fefefe;
   border-color: #fdfdfe; }
   .alert-light hr {
-    border-top-color: #ececf6; }
+    border-top-color: #ececf5; }
   .alert-light .alert-link {
     color: #686868; }
 
@@ -4108,7 +3995,7 @@ tbody.collapse.show {
   .alert-dark hr {
     border-top-color: #b9bbbe; }
   .alert-dark .alert-link {
-    color: #040505; }
+    color: #040405; }
 
 @keyframes progress-bar-stripes {
   from {
@@ -4155,7 +4042,8 @@ tbody.collapse.show {
   width: 100%;
   color: #495057;
   text-align: inherit; }
-  .list-group-item-action:focus, .list-group-item-action:hover {
+  .list-group-item-action:focus,
+  .list-group-item-action:hover {
     color: #495057;
     text-decoration: none;
     background-color: #f8f9fa; }
@@ -4177,9 +4065,11 @@ tbody.collapse.show {
     margin-bottom: 0;
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem; }
-  .list-group-item:focus, .list-group-item:hover {
+  .list-group-item:focus,
+  .list-group-item:hover {
     text-decoration: none; }
-  .list-group-item.disabled, .list-group-item:disabled {
+  .list-group-item.disabled,
+  .list-group-item:disabled {
     color: #868e96;
     background-color: #fff; }
   .list-group-item.active {
@@ -4206,7 +4096,8 @@ tbody.collapse.show {
 a.list-group-item-primary,
 button.list-group-item-primary {
   color: #004085; }
-  a.list-group-item-primary:focus, a.list-group-item-primary:hover,
+  a.list-group-item-primary:focus,
+  a.list-group-item-primary:hover,
   button.list-group-item-primary:focus,
   button.list-group-item-primary:hover {
     color: #004085;
@@ -4224,7 +4115,8 @@ button.list-group-item-primary {
 a.list-group-item-secondary,
 button.list-group-item-secondary {
   color: #464a4e; }
-  a.list-group-item-secondary:focus, a.list-group-item-secondary:hover,
+  a.list-group-item-secondary:focus,
+  a.list-group-item-secondary:hover,
   button.list-group-item-secondary:focus,
   button.list-group-item-secondary:hover {
     color: #464a4e;
@@ -4242,7 +4134,8 @@ button.list-group-item-secondary {
 a.list-group-item-success,
 button.list-group-item-success {
   color: #155724; }
-  a.list-group-item-success:focus, a.list-group-item-success:hover,
+  a.list-group-item-success:focus,
+  a.list-group-item-success:hover,
   button.list-group-item-success:focus,
   button.list-group-item-success:hover {
     color: #155724;
@@ -4260,7 +4153,8 @@ button.list-group-item-success {
 a.list-group-item-info,
 button.list-group-item-info {
   color: #0c5460; }
-  a.list-group-item-info:focus, a.list-group-item-info:hover,
+  a.list-group-item-info:focus,
+  a.list-group-item-info:hover,
   button.list-group-item-info:focus,
   button.list-group-item-info:hover {
     color: #0c5460;
@@ -4278,7 +4172,8 @@ button.list-group-item-info {
 a.list-group-item-warning,
 button.list-group-item-warning {
   color: #856404; }
-  a.list-group-item-warning:focus, a.list-group-item-warning:hover,
+  a.list-group-item-warning:focus,
+  a.list-group-item-warning:hover,
   button.list-group-item-warning:focus,
   button.list-group-item-warning:hover {
     color: #856404;
@@ -4296,7 +4191,8 @@ button.list-group-item-warning {
 a.list-group-item-danger,
 button.list-group-item-danger {
   color: #721c24; }
-  a.list-group-item-danger:focus, a.list-group-item-danger:hover,
+  a.list-group-item-danger:focus,
+  a.list-group-item-danger:hover,
   button.list-group-item-danger:focus,
   button.list-group-item-danger:hover {
     color: #721c24;
@@ -4314,11 +4210,12 @@ button.list-group-item-danger {
 a.list-group-item-light,
 button.list-group-item-light {
   color: #818182; }
-  a.list-group-item-light:focus, a.list-group-item-light:hover,
+  a.list-group-item-light:focus,
+  a.list-group-item-light:hover,
   button.list-group-item-light:focus,
   button.list-group-item-light:hover {
     color: #818182;
-    background-color: #ececf6; }
+    background-color: #ececf5; }
   a.list-group-item-light.active,
   button.list-group-item-light.active {
     color: #fff;
@@ -4332,7 +4229,8 @@ button.list-group-item-light {
 a.list-group-item-dark,
 button.list-group-item-dark {
   color: #1b1e21; }
-  a.list-group-item-dark:focus, a.list-group-item-dark:hover,
+  a.list-group-item-dark:focus,
+  a.list-group-item-dark:hover,
   button.list-group-item-dark:focus,
   button.list-group-item-dark:hover {
     color: #1b1e21;
@@ -4351,7 +4249,8 @@ button.list-group-item-dark {
   color: #000;
   text-shadow: 0 1px 0 #fff;
   opacity: .5; }
-  .close:focus, .close:hover {
+  .close:focus,
+  .close:hover {
     color: #000;
     text-decoration: none;
     opacity: .75; }
@@ -4588,7 +4487,8 @@ button.close {
     margin-bottom: 10px; }
     .popover.bs-popover-top .arrow, .popover.bs-popover-auto[x-placement^="top"] .arrow {
       bottom: 0; }
-    .popover.bs-popover-top .arrow::before, .popover.bs-popover-auto[x-placement^="top"] .arrow::before,
+    .popover.bs-popover-top .arrow::before,
+    .popover.bs-popover-auto[x-placement^="top"] .arrow::before,
     .popover.bs-popover-top .arrow::after, .popover.bs-popover-auto[x-placement^="top"] .arrow::after {
       border-bottom-width: 0; }
     .popover.bs-popover-top .arrow::before, .popover.bs-popover-auto[x-placement^="top"] .arrow::before {
@@ -4603,7 +4503,8 @@ button.close {
     margin-left: 10px; }
     .popover.bs-popover-right .arrow, .popover.bs-popover-auto[x-placement^="right"] .arrow {
       left: 0; }
-    .popover.bs-popover-right .arrow::before, .popover.bs-popover-auto[x-placement^="right"] .arrow::before,
+    .popover.bs-popover-right .arrow::before,
+    .popover.bs-popover-auto[x-placement^="right"] .arrow::before,
     .popover.bs-popover-right .arrow::after, .popover.bs-popover-auto[x-placement^="right"] .arrow::after {
       margin-top: -8px;
       border-left-width: 0; }
@@ -4617,7 +4518,8 @@ button.close {
     margin-top: 10px; }
     .popover.bs-popover-bottom .arrow, .popover.bs-popover-auto[x-placement^="bottom"] .arrow {
       top: 0; }
-    .popover.bs-popover-bottom .arrow::before, .popover.bs-popover-auto[x-placement^="bottom"] .arrow::before,
+    .popover.bs-popover-bottom .arrow::before,
+    .popover.bs-popover-auto[x-placement^="bottom"] .arrow::before,
     .popover.bs-popover-bottom .arrow::after, .popover.bs-popover-auto[x-placement^="bottom"] .arrow::after {
       margin-left: -7px;
       border-top-width: 0; }
@@ -4640,7 +4542,8 @@ button.close {
     margin-right: 10px; }
     .popover.bs-popover-left .arrow, .popover.bs-popover-auto[x-placement^="left"] .arrow {
       right: 0; }
-    .popover.bs-popover-left .arrow::before, .popover.bs-popover-auto[x-placement^="left"] .arrow::before,
+    .popover.bs-popover-left .arrow::before,
+    .popover.bs-popover-auto[x-placement^="left"] .arrow::before,
     .popover.bs-popover-left .arrow::after, .popover.bs-popover-auto[x-placement^="left"] .arrow::after {
       margin-top: -8px;
       border-right-width: 0; }
@@ -4730,7 +4633,8 @@ button.close {
   color: #fff;
   text-align: center;
   opacity: 0.5; }
-  .carousel-control-prev:focus, .carousel-control-prev:hover,
+  .carousel-control-prev:focus,
+  .carousel-control-prev:hover,
   .carousel-control-next:focus,
   .carousel-control-next:hover {
     color: #fff;
@@ -4830,49 +4734,57 @@ button.close {
 .bg-primary {
   background-color: #007bff !important; }
 
-a.bg-primary:focus, a.bg-primary:hover {
+a.bg-primary:focus,
+a.bg-primary:hover {
   background-color: #0062cc !important; }
 
 .bg-secondary {
   background-color: #868e96 !important; }
 
-a.bg-secondary:focus, a.bg-secondary:hover {
-  background-color: #6c757d !important; }
+a.bg-secondary:focus,
+a.bg-secondary:hover {
+  background-color: #6c747d !important; }
 
 .bg-success {
   background-color: #28a745 !important; }
 
-a.bg-success:focus, a.bg-success:hover {
+a.bg-success:focus,
+a.bg-success:hover {
   background-color: #1e7e34 !important; }
 
 .bg-info {
   background-color: #17a2b8 !important; }
 
-a.bg-info:focus, a.bg-info:hover {
+a.bg-info:focus,
+a.bg-info:hover {
   background-color: #117a8b !important; }
 
 .bg-warning {
   background-color: #ffc107 !important; }
 
-a.bg-warning:focus, a.bg-warning:hover {
+a.bg-warning:focus,
+a.bg-warning:hover {
   background-color: #d39e00 !important; }
 
 .bg-danger {
   background-color: #dc3545 !important; }
 
-a.bg-danger:focus, a.bg-danger:hover {
+a.bg-danger:focus,
+a.bg-danger:hover {
   background-color: #bd2130 !important; }
 
 .bg-light {
   background-color: #f8f9fa !important; }
 
-a.bg-light:focus, a.bg-light:hover {
+a.bg-light:focus,
+a.bg-light:hover {
   background-color: #dae0e5 !important; }
 
 .bg-dark {
   background-color: #343a40 !important; }
 
-a.bg-dark:focus, a.bg-dark:hover {
+a.bg-dark:focus,
+a.bg-dark:hover {
   background-color: #1d2124 !important; }
 
 .bg-white {
@@ -5522,7 +5434,8 @@ a.bg-dark:focus, a.bg-dark:hover {
   clip-path: inset(50%);
   border: 0; }
 
-.sr-only-focusable:active, .sr-only-focusable:focus {
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
   position: static;
   width: auto;
   height: auto;
@@ -6623,49 +6536,57 @@ a.bg-dark:focus, a.bg-dark:hover {
 .text-primary {
   color: #007bff !important; }
 
-a.text-primary:focus, a.text-primary:hover {
+a.text-primary:focus,
+a.text-primary:hover {
   color: #0062cc !important; }
 
 .text-secondary {
   color: #868e96 !important; }
 
-a.text-secondary:focus, a.text-secondary:hover {
-  color: #6c757d !important; }
+a.text-secondary:focus,
+a.text-secondary:hover {
+  color: #6c747d !important; }
 
 .text-success {
   color: #28a745 !important; }
 
-a.text-success:focus, a.text-success:hover {
+a.text-success:focus,
+a.text-success:hover {
   color: #1e7e34 !important; }
 
 .text-info {
   color: #17a2b8 !important; }
 
-a.text-info:focus, a.text-info:hover {
+a.text-info:focus,
+a.text-info:hover {
   color: #117a8b !important; }
 
 .text-warning {
   color: #ffc107 !important; }
 
-a.text-warning:focus, a.text-warning:hover {
+a.text-warning:focus,
+a.text-warning:hover {
   color: #d39e00 !important; }
 
 .text-danger {
   color: #dc3545 !important; }
 
-a.text-danger:focus, a.text-danger:hover {
+a.text-danger:focus,
+a.text-danger:hover {
   color: #bd2130 !important; }
 
 .text-light {
   color: #f8f9fa !important; }
 
-a.text-light:focus, a.text-light:hover {
+a.text-light:focus,
+a.text-light:hover {
   color: #dae0e5 !important; }
 
 .text-dark {
   color: #343a40 !important; }
 
-a.text-dark:focus, a.text-dark:hover {
+a.text-dark:focus,
+a.text-dark:hover {
   color: #1d2124 !important; }
 
 .text-muted {
@@ -6755,26 +6676,31 @@ a.skip-link {
   white-space: nowrap;
   background: none;
   border: 0; }
-  .navbar-dark .navbar-nav .dropdown-menu .nav-link:focus, .navbar-dark .navbar-nav .dropdown-menu .nav-link:hover {
+  .navbar-dark .navbar-nav .dropdown-menu .nav-link:focus,
+  .navbar-dark .navbar-nav .dropdown-menu .nav-link:hover {
     color: #16181b !important;
     text-decoration: none;
     background-color: #f8f9fa; }
-  .navbar-dark .navbar-nav .dropdown-menu .nav-link.active, .navbar-dark .navbar-nav .dropdown-menu .nav-link:active {
+  .navbar-dark .navbar-nav .dropdown-menu .nav-link.active,
+  .navbar-dark .navbar-nav .dropdown-menu .nav-link:active {
     color: #fff !important;
     text-decoration: none;
     background-color: #007bff; }
-  .navbar-dark .navbar-nav .dropdown-menu .nav-link.disabled, .navbar-dark .navbar-nav .dropdown-menu .nav-link:disabled {
+  .navbar-dark .navbar-nav .dropdown-menu .nav-link.disabled,
+  .navbar-dark .navbar-nav .dropdown-menu .nav-link:disabled {
     color: #868e96 !important;
     background-color: transparent; }
 
 .navbar-light .navbar-brand a {
   color: rgba(0, 0, 0, 0.9); }
-  .navbar-light .navbar-brand a:focus, .navbar-light .navbar-brand a:hover {
+  .navbar-light .navbar-brand a:focus,
+  .navbar-light .navbar-brand a:hover {
     color: rgba(0, 0, 0, 0.9); }
 
 .navbar-dark .navbar-brand a {
   color: white; }
-  .navbar-dark .navbar-brand a:focus, .navbar-dark .navbar-brand a:hover {
+  .navbar-dark .navbar-brand a:focus,
+  .navbar-dark .navbar-brand a:hover {
     color: white; }
 
 /*
@@ -6861,7 +6787,7 @@ a.skip-link {
     left: -1.85714em; }
 
 .fa-border {
-  padding: .2em .25em .15em;
+  padding: 0.2em 0.25em 0.15em;
   border: solid 0.08em #eee;
   border-radius: .1em; }
 
@@ -9156,6 +9082,10 @@ a.skip-link {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row; }
+  @media (max-width: 760px) {
+    .split-container {
+      display: block;
+      width: 100%; } }
 
 .split-item {
   display: -webkit-box;
@@ -9177,6 +9107,10 @@ a.skip-link {
   align-items: center;
   width: 50%;
   padding: 3em 5em 6em 5em; }
+  @media (max-width: 760px) {
+    .split-item {
+      display: block;
+      width: 100%; } }
 
 .button-container {
   display: inline-block;
@@ -9184,9 +9118,15 @@ a.skip-link {
 
 .button {
   display: inline-block;
-  padding: .5rem 1rem;
-  margin: .5rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: .75rem;
+  font-weight: 500;
+  letter-spacing: .5px;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
   width: auto; }
+  .button:hover {
+    text-decoration: none; }
 
 .hero {
   background: url("../imgs/header.svg");
@@ -9206,6 +9146,74 @@ a.skip-link {
   height: 200px;
   margin: 0 auto;
   width: 200px; }
+
+.heroInterior {
+  background: url("../imgs/header.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px; }
+
+.heroInterior-img {
+  background: url("../imgs/mandala.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  margin: 0 auto;
+  width: 200px; }
+
+.mainNav-wrapper {
+  background-color: #fcfaf6;
+  padding: 20px 15px 20px; }
+
+.mainNav-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%; }
+
+.mainNav-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.mainNav {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+  margin: 0 auto;
+  padding-left: 6%;
+  text-align: center; }
+
+.mainNav-link {
+  color: #134142;
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+  margin: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .mainNav-link:hover {
+    color: #2a8f91;
+    text-decoration: none; }
+
+.mainNav-linkHome {
+  font-size: 1.5rem; }
+
+.navBack-text {
+  color: #fff;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  margin: 20px 0 0; }
+  .navBack-text:hover {
+    color: #cccccc;
+    text-decoration: none; }
 
 .about-wrapper {
   background-color: #f9f5ef;
@@ -9241,6 +9249,7 @@ a.skip-link {
   background-size: contain;
   height: 100px;
   margin: 0 auto;
+  max-width: 100%;
   width: 300px; }
 
 .about-textWrapper {
@@ -9267,29 +9276,39 @@ a.skip-link {
 
 .cat-tattooWrapper {
   background-color: #134142;
-  color: #b89132;
+  color: #A88943;
   text-align: center; }
 
 .cat-tattooButtonContainer {
-  background-color: #b89132; }
+  background-color: #A88943; }
+  .cat-tattooButtonContainer:hover {
+    background-color: #846b34; }
+    .cat-tattooButtonContainer:hover .cat-tattooButton {
+      color: #134142;
+      background-color: #846b34; }
 
 .cat-tattooButton {
-  background-color: #b89132;
+  background-color: #A88943;
   border: 1px solid #134142;
   color: #134142; }
 
 .cat-piercingWrapper {
-  background-color: #b89132;
+  background-color: #A88943;
   color: #134142;
   text-align: center; }
 
 .cat-piercingButtonContainer {
   background-color: #134142; }
+  .cat-piercingButtonContainer:hover {
+    background-color: #081a1a; }
+    .cat-piercingButtonContainer:hover .cat-piercingButton {
+      color: #A88943;
+      background-color: #081a1a; }
 
 .cat-piercingButton {
   background-color: #134142;
-  border: 1px solid #b89132;
-  color: #b89132; }
+  border: 1px solid #A88943;
+  color: #A88943; }
 
 .artists-wrapper {
   background-color: #f9f5ef;
@@ -9314,12 +9333,129 @@ a.skip-link {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 0 0 66.66667%;
-  max-width: 66.66667%;
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
   margin: 0 auto; }
 
 .artists-title {
   text-align: center; }
+
+.artists-galleryWrapper {
+  margin: 0 auto; }
+
+.artists-galleryWrapper .staff-member {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 18.75%;
+  max-width: 18.75%;
+  float: left; }
+  @media (max-width: 960px) {
+    .artists-galleryWrapper .staff-member {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+      margin: 10px 0; } }
+  @media (max-width: 720px) {
+    .artists-galleryWrapper .staff-member {
+      flex: 0 0 50%;
+      max-width: 50%; } }
+
+.piercer-galleryWrapper .staff-member {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  float: left; }
+  @media (max-width: 960px) {
+    .piercer-galleryWrapper .staff-member {
+      margin: 10px 0; } }
+
+.artist-buttonContainer {
+  background-color: #134142;
+  width: 100%; }
+  .artist-buttonContainer:hover {
+    background-color: #081a1a; }
+    .artist-buttonContainer:hover .artist-button {
+      background-color: #081a1a;
+      color: #A88943;
+      text-decoration: none; }
+
+.artist-button {
+  background-color: #134142;
+  border: 1px solid #A88943;
+  color: #A88943;
+  text-align: center;
+  width: 75%; }
+
+.staff-interiorPhoto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
+
+.staff-infoWrap {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%; }
+
+.staff-galleryWrap {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+.piercer-galleryWrapper {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%; }
+  @media (max-width: 960px) {
+    .piercer-galleryWrapper {
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%;
+      margin: 10px 0; } }
+  @media (max-width: 720px) {
+    .piercer-galleryWrapper {
+      flex: 0 0 100%;
+      max-width: 100%; } }
+
+.staff-name {
+  margin-top: 0; }
+
+.staff-title {
+  font-size: 1.25rem;
+  letter-spacing: 3px;
+  margin: 20px 0 0; }
+
+.afg-img {
+  margin: 5% 10px; }
+
+a.afg-page,
+.afg-page {
+  background-color: #134142;
+  color: #fff;
+  padding: 2px; }
+
+a.afg-page:hover {
+  background: #081a1a; }
 
 .gallery-wrapper {
   background-color: #938b7a;
@@ -9344,8 +9480,8 @@ a.skip-link {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  flex: 0 0 66.66667%;
-  max-width: 66.66667%;
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
   margin: 0 auto; }
 
 .gallery-title {
@@ -9359,19 +9495,216 @@ a.skip-link {
   width: 100%; }
 
 .contact-formWrapper {
-  background-color: #b89132;
-  color: #134142;
+  background-color: #134142;
+  color: #A88943;
+  padding: 0;
   text-align: center;
   width: 67%; }
+  @media (max-width: 960px) {
+    .contact-formWrapper {
+      width: 100%; } }
 
 .contact-mapWrapper {
   background: url("../imgs/maps.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #b89132;
+  color: #A88943;
   text-align: center;
   width: 33%; }
+  @media (max-width: 960px) {
+    .contact-mapWrapper {
+      display: none; } }
+
+.contact-link {
+  color: #A88943; }
+  .contact-link:hover {
+    color: #846b34;
+    text-decoration: none; }
+
+.contact-formText {
+  padding: 3em 3em 2em;
+  text-align: left;
+  width: 100%; }
+
+.wpcf7 {
+  margin: 0 !important; }
+
+.wpcf7 .wpcf7-form label {
+  float: left;
+  margin: 1% 2% 1% 0;
+  width: 40%; }
+  .wpcf7 .wpcf7-form label.contact-formMessage {
+    float: none;
+    width: 84%; }
+
+.btn-outline-primary, .wpcf7 input[type=submit], .wpcf7 input[type="submit"] {
+  background-color: #A88943;
+  border: 1px solid #134142;
+  color: #134142;
+  width: 84%; }
+  .btn-outline-primary:hover, .wpcf7 input[type=submit]:hover, .wpcf7 input[type="submit"]:hover {
+    background-color: #134142;
+    border: 1px solid #A88943; }
+
+.contact-formFacebook {
+  background-color: #0e6664;
+  padding: 3em 3em 2em;
+  text-align: left;
+  width: 100%; }
+  @media (max-width: 960px) {
+    .contact-formFacebook {
+      width: 100%; } }
+
+.cff-date,
+.cff-author {
+  display: none; }
+
+.cff-item > p,
+p.cff-post-text {
+  margin: 0; }
+
+#cff.cff-default-styles a {
+  color: #938b7a; }
+
+.internalPage-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  margin: 60px 0 40px; }
+
+.internalPage-columns {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%; }
+
+.footer-wrapper {
+  background: url("../imgs/footer-graphic.svg");
+  background-color: #06897f;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: initial; }
+
+.footer-copyright {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  color: #134142; }
+  @media (max-width: 960px) {
+    .footer-copyright {
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin: 10px 0; } }
+  @media (max-width: 720px) {
+    .footer-copyright {
+      flex: 0 0 100%;
+      max-width: 100%; } }
+
+.footer-logo {
+  background: url("../imgs/mandala.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+  height: 50px;
+  margin: 5px;
+  width: 50px; }
+
+.footer-copyrightText {
+  float: left;
+  font-size: .7rem;
+  line-height: .9rem;
+  margin-top: 5%; }
+
+.footer-social {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+  display: flex;
+  justify-content: flex-end; }
+  @media (max-width: 960px) {
+    .footer-social {
+      flex: 0 0 50%;
+      max-width: 50%; } }
+  @media (max-width: 720px) {
+    .footer-social {
+      flex: 0 0 100%;
+      max-width: 100%; } }
+
+.footer-icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 40px;
+  margin: 10px;
+  width: 40px; }
+
+.footer-facebook {
+  background: url("../imgs/facebook.svg"); }
+
+.footer-instagram {
+  background: url("../imgs/instagram.svg"); }
+
+.footer-google {
+  background: url("../imgs/google.svg"); }
+
+.footer-yelp {
+  background: url("../imgs/yelp.svg"); }
+
+.single-artistContainer,
+.internal-artistContainer {
+  padding: 2em 0 3em; }
+
+.single-artistImageWrap,
+.internal-artistImageWrap {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+.single-artistInfoWrap,
+.internal-artistInfoWrap {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+.single-artistName,
+.internal-artistName {
+  margin: 0; }
+
+.single-artistNameLink {
+  color: #0e6664; }
+  .single-artistNameLink:hover {
+    color: #083938;
+    text-decoration: none; }
+
+.single-readMore {
+  color: #41b8b6; }
+  .single-readMore:hover {
+    color: #349291;
+    text-decoration: none; }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -9386,6 +9719,15 @@ h1, h2, h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-transform: uppercase; }
+
+h4, h5, h6 {
+  text-align: left;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 1.85rem;
+  letter-spacing: 3px;
+  margin: 2rem 0; }
 
 h2 {
   font-size: 1.75rem;

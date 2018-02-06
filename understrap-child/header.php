@@ -26,9 +26,35 @@ $container = get_theme_mod( 'understrap_container_type' );
 <body <?php body_class(); ?>>
 
 <div class="hfeed site" id="page">
+	
+	<?php if(is_front_page()): ?>
 
-<header class="hero">
-	<div class="hero-imgWrapper">
-		<div class="hero-img">&nbsp;</div>
+	<header class="hero">
+		<div class="hero-imgWrapper">
+			<div class="hero-img">&nbsp;</div>
+		</div>
+	</header>
+	
+	
+	<?php else : ?>
+	
+	<header class="heroInterior">
+		<div class="heroInterior-imgWrapper">
+			<div class="heroInterior-img">&nbsp;</div>
+		</div>
+	</header>
+	
+
+	<?php endif; ?>
+	
+	<div class="mainNav-wrapper">
+		<div class="mainNav-container">
+			<div class="mainNav-row">
+				<div class="mainNav">
+					<a class="mainNav-link" href="<?php echo esc_url( home_url( '/faqs' ) ); ?>">FAQs</a>
+					<a class="mainNav-link mainNav-linkHome" href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
+					<a class="mainNav-link" href="#contact">Contact</a>
+				</div>
+			</div>
+		</div>
 	</div>
-</header>
